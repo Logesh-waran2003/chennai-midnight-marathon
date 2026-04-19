@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:           oklch(0.07 0.025 265);
+  --surface:      oklch(0.11 0.02 265);
+  --accent:       oklch(0.76 0.19 62);
+  --accent-dim:   oklch(0.55 0.14 62);
+  --fg:           oklch(0.96 0.008 265);
+  --muted:        oklch(0.52 0.015 265);
+  --border:       oklch(0.18 0.015 265);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Crimson Pro', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Light mode overrides */
+html.light {
+  --bg:         oklch(0.97 0.008 62);
+  --surface:    oklch(0.93 0.012 62);
+  --fg:         oklch(0.12 0.025 265);
+  --muted:      oklch(0.45 0.015 265);
+  --border:     oklch(0.82 0.012 62);
+}
