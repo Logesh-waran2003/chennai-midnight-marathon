@@ -38,6 +38,24 @@ import V4Route from './tiers/v4/pages/Route'
 import V4Privacy from './tiers/v4/pages/Privacy'
 import V4Refund from './tiers/v4/pages/Refund'
 import V4Terms from './tiers/v4/pages/Terms'
+import V5Layout from './tiers/v5/V5Layout'
+import V5Home from './tiers/v5/pages/Home'
+import V5Races from './tiers/v5/pages/Races'
+import V5FAQs from './tiers/v5/pages/FAQs'
+import V5About from './tiers/v5/pages/About'
+import V5Contact from './tiers/v5/pages/Contact'
+import V5Celebrities from './tiers/v5/pages/Celebrities'
+import V5Rookies from './tiers/v5/pages/Rookies'
+import V5Medical from './tiers/v5/pages/Medical'
+import V5Prizes from './tiers/v5/pages/Prizes'
+import V5Opportunities from './tiers/v5/pages/Opportunities'
+import V5Partners from './tiers/v5/pages/Partners'
+import V5RBITC from './tiers/v5/pages/RBITC'
+import V5Philanthropy from './tiers/v5/pages/Philanthropy'
+import V5Route from './tiers/v5/pages/Route'
+import V5Privacy from './tiers/v5/pages/Privacy'
+import V5Refund from './tiers/v5/pages/Refund'
+import V5Terms from './tiers/v5/pages/Terms'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -82,6 +100,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="privacy" element={<V4Privacy />} />
           <Route path="refund" element={<V4Refund />} />
           <Route path="terms" element={<V4Terms />} />
+        </Route>
+        <Route path="v5" element={<V5Layout />}>
+          <Route index element={<V5Home />} />
+          <Route path="races" element={<V5Races />} />
+          <Route path="faqs" element={<V5FAQs />} />
+          <Route path="about" element={<V5About />} />
+          <Route path="contact" element={<V5Contact />} />
+          <Route path="celebrities" element={<V5Celebrities />} />
+          <Route path="rookies" element={<V5Rookies />} />
+          <Route path="medical" element={<V5Medical />} />
+          <Route path="prizes" element={<V5Prizes />} />
+          <Route path="opportunities" element={<V5Opportunities />} />
+          <Route path="partners" element={<V5Partners />} />
+          <Route path="rbitc" element={<V5RBITC />} />
+          <Route path="philanthropy" element={<V5Philanthropy />} />
+          <Route path="route" element={<V5Route />} />
+          <Route path="privacy" element={<V5Privacy />} />
+          <Route path="refund" element={<V5Refund />} />
+          <Route path="terms" element={<V5Terms />} />
         </Route>
       </Routes>
     </BrowserRouter>
