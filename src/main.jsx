@@ -20,6 +20,7 @@ import V3Register from './tiers/v3/pages/Register'
 import V3Privacy from './tiers/v3/pages/Privacy'
 import V3Terms from './tiers/v3/pages/Terms'
 import V3Refund from './tiers/v3/pages/Refund'
+import V4Layout from './tiers/v4/Layout'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index element={<PitchSelector />} />
         <Route path="v1" element={<V1Layout />} />
         <Route path="v2" element={<V2Layout />} />
+        <Route path="v4" element={<V4Layout />} />
         <Route path="v3" element={<V3Layout />}>
           <Route index element={<V3Home />} />
           <Route path="races" element={<V3Races />} />
