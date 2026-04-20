@@ -1,5 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 // ─── motion variants ──────────────────────────────────────────────────────────
 const fadeUp = {
@@ -537,12 +542,94 @@ function WhySection({ dark }) {
 
 export default function App() {
   const [dark, setDark] = useDark()
+  useEffect(() => { return () => ScrollTrigger.getAll().forEach(t => t.kill()) }, [])
   return (
     <div style={{ background: dark ? '#080d1a' : '#f4f7ff', minHeight: '100vh' }}>
       <Nav dark={dark} setDark={setDark} />
       <Hero dark={dark} />
       <RacesSection dark={dark} />
       <WhySection dark={dark} />
+      <SponsorsSection dark={dark} />
+      <CTASection dark={dark} />
+      <Footer dark={dark} />
     </div>
+  )
+}
+
+function SponsorsSection({ dark }) {
+  const ref = useRef(null)
+  useGSAP(() => {
+    gsap.from('.v1-sponsor', {
+      opacity: 0, y: 20, stagger: 0.08, duration: 0.6, ease: 'power2.out',
+      scrollTrigger: { trigger: ref.current, start: 'top 85%' },
+    })
+  }, { scope: ref })
+
+  const sponsors = ['Nike', 'Gatorade', 'TCS', 'SBI', 'Apollo', 'Decathlon', 'Garmin', 'Asics']
+  return (
+    <section ref={ref} style={{ padding: '80px 0', borderTop: `1px solid ${dark ? '#1e2d4a' : '#c8d4ee'}`, background: dark ? '#080d1a' : '#f4f7ff' }}>
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <p className={`font-['Inter'] text-xs font-semibold tracking-[0.2em] uppercase mb-8 ${dark ? 'text-[#6b7fa3]' : 'text-[#4a5a7a]'}`}>
+          Official Partners
+        </p>
+        <div className="flex flex-wrap justify-center gap-8">
+          {sponsors.map(s => (
+            <span key={s} className={`v1-sponsor font-['Inter'] font-medium text-sm ${dark ? 'text-[#2a3a5a]' : 'text-[#b0bdd4]'} hover:text-[#3b82f6] transition-colors cursor-default`}>
+              {s}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function CTASection({ dark }) {
+  const ref = useRef(null)
+  useGSAP(() => {
+    gsap.from(ref.current.querySelector('.v1-cta-inner'), {
+      scale: 0.95, opacity: 0, duration: 1, ease: 'power3.out',
+      scrollTrigger: { trigger: ref.current, start: 'top 80%' },
+    })
+  }, { scope: ref })
+
+  return (
+    <section ref={ref} style={{ padding: '120px 0', background: dark ? '#0f1629' : '#eaeffc' }}>
+      <div className="v1-cta-inner max-w-3xl mx-auto px-6 text-center">
+        <h2 className={`font-['Inter'] font-bold mb-4 ${dark ? 'text-[#eef2ff]' : 'text-[#0a1628]'}`} style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>
+          Ready to run the night?
+        </h2>
+        <p className={`font-['Source_Serif_4'] text-lg mb-8 ${dark ? 'text-[#6b7fa3]' : 'text-[#4a5a7a]'}`}>
+          Limited bibs available. Early bird pricing ends January 31, 2026.
+        </p>
+        <motion.a
+          href="#register"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+          className="inline-block bg-[#3b82f6] text-white font-['Inter'] font-semibold px-10 py-4 rounded-xl no-underline text-base hover:bg-[#2563eb] transition-colors"
+        >
+          Register Now
+        </motion.a>
+      </div>
+    </section>
+  )
+}
+
+function Footer({ dark }) {
+  return (
+    <footer style={{ padding: '48px 0', borderTop: `1px solid ${dark ? '#1e2d4a' : '#c8d4ee'}`, background: dark ? '#080d1a' : '#f4f7ff' }}>
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <span className="font-['Inter'] font-bold text-lg text-[#3b82f6]">CMM</span>
+          <span className={`font-['Source_Serif_4'] text-sm ${dark ? 'text-[#6b7fa3]' : 'text-[#4a5a7a]'}`}>Chennai Midnight Marathon</span>
+        </div>
+        <div className="flex gap-6">
+          {['Instagram', 'Twitter', 'YouTube'].map(s => (
+            <a key={s} href="#" className={`font-['Source_Serif_4'] text-sm no-underline ${dark ? 'text-[#6b7fa3]' : 'text-[#4a5a7a]'} hover:text-[#3b82f6] transition-colors`}>{s}</a>
+          ))}
+        </div>
+        <p className={`font-['Source_Serif_4'] text-xs ${dark ? 'text-[#2a3a5a]' : 'text-[#b0bdd4]'}`}>© 2026 CMM. All rights reserved.</p>
+      </div>
+    </footer>
   )
 }
