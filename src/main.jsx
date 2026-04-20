@@ -1,44 +1,50 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import Races from './pages/Races'
-import Route_ from './pages/Route'
-import Prizes from './pages/Prizes'
-import Ambassadors from './pages/Ambassadors'
-import About from './pages/About'
-import FAQs from './pages/FAQs'
-import Contact from './pages/Contact'
-import Rookies from './pages/Rookies'
-import Medical from './pages/Medical'
-import Partners from './pages/Partners'
-import Register from './pages/Register'
-import Privacy from './pages/Privacy'
-import Terms from './pages/Terms'
-import Refund from './pages/Refund'
+import PitchSelector from './PitchSelector'
+import V1Layout from './tiers/v1/Layout'
+import V2Layout from './tiers/v2/Layout'
+import V3Layout from './tiers/v3/Layout'
+import V3Home from './tiers/v3/pages/Home'
+import V3Races from './tiers/v3/pages/Races'
+import V3Route from './tiers/v3/pages/Route'
+import V3Prizes from './tiers/v3/pages/Prizes'
+import V3Ambassadors from './tiers/v3/pages/Ambassadors'
+import V3About from './tiers/v3/pages/About'
+import V3FAQs from './tiers/v3/pages/FAQs'
+import V3Contact from './tiers/v3/pages/Contact'
+import V3Rookies from './tiers/v3/pages/Rookies'
+import V3Medical from './tiers/v3/pages/Medical'
+import V3Partners from './tiers/v3/pages/Partners'
+import V3Register from './tiers/v3/pages/Register'
+import V3Privacy from './tiers/v3/pages/Privacy'
+import V3Terms from './tiers/v3/pages/Terms'
+import V3Refund from './tiers/v3/pages/Refund'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="races" element={<Races />} />
-          <Route path="route" element={<Route_ />} />
-          <Route path="prizes" element={<Prizes />} />
-          <Route path="ambassadors" element={<Ambassadors />} />
-          <Route path="about" element={<About />} />
-          <Route path="faqs" element={<FAQs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="rookies" element={<Rookies />} />
-          <Route path="medical" element={<Medical />} />
-          <Route path="partners" element={<Partners />} />
-          <Route path="register" element={<Register />} />
-          <Route path="privacy" element={<Privacy />} />
-          <Route path="terms" element={<Terms />} />
-          <Route path="refund" element={<Refund />} />
+        <Route index element={<PitchSelector />} />
+        <Route path="v1" element={<V1Layout />} />
+        <Route path="v2" element={<V2Layout />} />
+        <Route path="v3" element={<V3Layout />}>
+          <Route index element={<V3Home />} />
+          <Route path="races" element={<V3Races />} />
+          <Route path="route" element={<V3Route />} />
+          <Route path="prizes" element={<V3Prizes />} />
+          <Route path="ambassadors" element={<V3Ambassadors />} />
+          <Route path="about" element={<V3About />} />
+          <Route path="faqs" element={<V3FAQs />} />
+          <Route path="contact" element={<V3Contact />} />
+          <Route path="rookies" element={<V3Rookies />} />
+          <Route path="medical" element={<V3Medical />} />
+          <Route path="partners" element={<V3Partners />} />
+          <Route path="register" element={<V3Register />} />
+          <Route path="privacy" element={<V3Privacy />} />
+          <Route path="terms" element={<V3Terms />} />
+          <Route path="refund" element={<V3Refund />} />
         </Route>
       </Routes>
     </BrowserRouter>

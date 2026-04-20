@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ACCENT, NAV_LINKS } from './constants'
+import { ACCENT, NAV_LINKS, BASE } from './constants'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -23,7 +23,7 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="font-display font-bold text-xl tracking-wider" style={{ color: ACCENT }}>
+        <Link to={BASE} className="font-display font-bold text-xl tracking-wider" style={{ color: ACCENT }}>
           CMM<span className="text-white/40 text-xs ml-2 tracking-[0.2em]">2026</span>
         </Link>
 
@@ -40,7 +40,7 @@ export default function Nav() {
         <div className="flex items-center gap-4">
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Link
-              to="/register"
+              to={`${BASE}/register`}
               className="font-display text-sm tracking-[0.15em] px-5 py-2 hidden sm:inline-block"
               style={{ background: ACCENT, color: '#000' }}
             >

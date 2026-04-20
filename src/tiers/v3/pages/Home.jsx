@@ -49,11 +49,11 @@ function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.7, duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <motion.div whileHover={{ scale: 1.03, boxShadow: `0 0 40px oklch(0.76 0.19 62 / 0.4)` }} whileTap={{ scale: 0.97 }}>
-            <Link to="/register" className="font-display font-semibold text-lg tracking-[0.12em] px-10 py-4 text-black inline-block" style={{ background: ACCENT }}>
+            <Link to="/v3/register" className="font-display font-semibold text-lg tracking-[0.12em] px-10 py-4 text-black inline-block" style={{ background: ACCENT }}>
               SECURE YOUR BIB
             </Link>
           </motion.div>
-          <Link to="/route" className="text-white/40 hover:text-white transition-colors text-sm tracking-wide flex items-center gap-2">
+          <Link to="/v3/route" className="text-white/40 hover:text-white transition-colors text-sm tracking-wide flex items-center gap-2">
             View Route
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </Link>
@@ -111,7 +111,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link to="/races" className="text-sm text-white/40 hover:text-white transition-colors tracking-wide border-b border-white/20 pb-0.5">
+            <Link to="/v3/races" className="text-sm text-white/40 hover:text-white transition-colors tracking-wide border-b border-white/20 pb-0.5">
               View all race details →
             </Link>
           </div>
@@ -147,7 +147,7 @@ export default function Home() {
             <div className="text-center z-10">
               <div className="font-display font-bold text-2xl md:text-3xl text-white/80 mb-2">42.2 KM Route</div>
               <div className="text-white/30 text-sm mb-4">Marina Beach → Mylapore → Adyar → Besant Nagar → Finish</div>
-              <Link to="/route" className="text-xs tracking-[0.15em] px-4 py-2 border border-white/20 text-white/50 hover:text-white hover:border-white/40 transition-colors font-display">
+              <Link to="/v3/route" className="text-xs tracking-[0.15em] px-4 py-2 border border-white/20 text-white/50 hover:text-white hover:border-white/40 transition-colors font-display">
                 EXPLORE ROUTE
               </Link>
             </div>
@@ -165,7 +165,7 @@ export default function Home() {
           </h2>
           <p className="text-white/40 mb-10 max-w-md mx-auto relative z-10">Limited bibs available. Early bird pricing ends February 28, 2026.</p>
           <motion.div whileHover={{ scale: 1.03, boxShadow: `0 0 60px oklch(0.76 0.19 62 / 0.3)` }} whileTap={{ scale: 0.97 }} className="inline-block relative z-10">
-            <Link to="/register" className="font-display font-semibold text-lg tracking-[0.12em] px-12 py-5 text-black inline-block" style={{ background: ACCENT }}>
+            <Link to="/v3/register" className="font-display font-semibold text-lg tracking-[0.12em] px-12 py-5 text-black inline-block" style={{ background: ACCENT }}>
               REGISTER NOW
             </Link>
           </motion.div>

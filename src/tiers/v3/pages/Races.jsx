@@ -59,7 +59,7 @@ export default function Races() {
                 </div>
                 <div className="flex items-center">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                    <Link to="/register" className="font-display text-sm tracking-[0.15em] px-6 py-3 inline-block" style={{ background: RACES[i]?.color || ACCENT, color: '#000' }}>
+                    <Link to="/v3/register" className="font-display text-sm tracking-[0.15em] px-6 py-3 inline-block" style={{ background: RACES[i]?.color || ACCENT, color: '#000' }}>
                       REGISTER
                     </Link>
                   </motion.div>

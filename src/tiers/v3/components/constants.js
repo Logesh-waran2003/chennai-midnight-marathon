@@ -15,12 +15,14 @@ export const STATS = [
   { value: 4, suffix: '', label: 'Editions' },
 ]
 
+export const BASE = '/v3'
+
 export const NAV_LINKS = [
-  { label: 'Races', path: '/races' },
-  { label: 'Route', path: '/route' },
-  { label: 'Prizes', path: '/prizes' },
-  { label: 'Ambassadors', path: '/ambassadors' },
-  { label: 'About', path: '/about' },
-  { label: 'FAQs', path: '/faqs' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Races', path: `${BASE}/races` },
+  { label: 'Route', path: `${BASE}/route` },
+  { label: 'Prizes', path: `${BASE}/prizes` },
+  { label: 'Ambassadors', path: `${BASE}/ambassadors` },
+  { label: 'About', path: `${BASE}/about` },
+  { label: 'FAQs', path: `${BASE}/faqs` },
+  { label: 'Contact', path: `${BASE}/contact` },
 ]
