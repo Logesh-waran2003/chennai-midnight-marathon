@@ -153,16 +153,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE CMM STORY — exact: Grechen Fuemen 50px white, Poppins 16px white */}
-      <section style={{ background: DARK_BG, padding: '60px 37px' }}>
+      {/* THE CMM STORY — exact: Grechen Fuemen 50px white, Poppins 16px white, height ~960px */}
+      <section style={{ background: DARK_BG, padding: '60px 37px', minHeight: 500 }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <Section>
             <h2 style={{ fontFamily: GRECHEN, fontSize: 50, fontWeight: 600, color: WHITE, textAlign: 'center', margin: '0 0 30px' }}>
               The CMM Story
             </h2>
-            <h2 style={{ fontFamily: POPPINS, fontSize: 16, fontWeight: 500, color: WHITE, lineHeight: 1.8, textAlign: 'center', margin: 0 }}>
+            <h2 style={{ fontFamily: POPPINS, fontSize: 16, fontWeight: 500, color: WHITE, lineHeight: 1.8, textAlign: 'center', margin: '0 0 20px' }}>
               The Chennai Midnight Marathon represents the vision, vigour and vibrance of the beloved and inspiring city. The Chennai Midnight Marathon (CMM) was founded by RBITC in 2023 to support various deserving charities across Tamil Nadu. With its unique chosen hours, it is South India's premier Midnight Marathon. The concept has captivated people resulting in a growing number of participants, from across India and beyond, each year.
             </h2>
+            <p style={{ fontFamily: POPPINS, fontSize: 16, fontWeight: 400, color: LIGHT_PURPLE, lineHeight: 1.8, textAlign: 'center', margin: '0 0 20px' }}>
+              Professional athletes and enthusiastic runners alike join together to run for a specific cause each year, which forms the theme of the marathon. The CMM reflects a unique spectrum of values which is shared by participants, their families and supporters across India and the world.
+            </p>
+            <p style={{ fontFamily: POPPINS, fontSize: 16, fontWeight: 400, color: LIGHT_PURPLE, lineHeight: 1.8, textAlign: 'center', margin: 0 }}>
+              All of Chennai comes out on race day to celebrate the spirit of the city. Companies participate in large numbers using the marathon as a platform to show support for the city, for employee engagement & brand visibility. NGOs participate to raise funds and create awareness for their cause.
+            </p>
+          </Section>
+        </div>
+      </section>
+
+      {/* INSTAGRAM/SOCIAL — exact: bg rgb(27,26,24), padding 75px 37px */}
+      <section style={{ background: INSTA_BG, padding: '75px 37px' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <Section>
+            <h3 style={{ fontFamily: POPPINS, fontSize: 24, fontWeight: 500, color: WHITE, textAlign: 'center', margin: '0 0 30px' }}>
+              Follow Us on Instagram
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 8 }}>
+              {[1,2,3,4,5].map(i => (
+                <div key={i} style={{ aspectRatio: '1/1', background: 'rgba(255,255,255,0.05)', borderRadius: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ fontFamily: POPPINS, fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>@cmm_run</span>
+                </div>
+              ))}
+            </div>
           </Section>
         </div>
       </section>
