@@ -8,23 +8,23 @@ const BODY_TEXT = '#333333'
 const WHITE = '#ffffff'
 
 const HERO_IMAGES = [
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/07/BMM-Logo-1-1024x269.png', alt: 'CMM Logo', type: 'logo' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/11/WhatsApp-Image-2025-11-28-at-12.07.42-PM-768x345.jpeg', alt: 'Marathon Banner', type: 'banner' },
+  { src: '/images/v4/logo.png', alt: 'CMM Logo', type: 'logo' },
+  { src: '/images/v4/banner.jpeg', alt: 'Marathon Banner', type: 'banner' },
 ]
 
 const BADGES = [
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/12/AIMS-Logo-310x152.png', alt: 'AIMS Certified' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/10/Certified-Measured-Course-239x247.png', alt: 'Certified Measured Course' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/12/Armed-Forces-Run-300x299.png', alt: 'Armed Forces Run' },
+  { src: '/images/v4/aims.png', alt: 'AIMS Certified' },
+  { src: '/images/v4/certified-course.png', alt: 'Certified Measured Course' },
+  { src: '/images/v4/armed-forces-tagline.png', alt: 'Armed Forces Run' },
 ]
 
 const PARTNERS = [
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/07/Title-312x148.png', tier: 'Title', alt: 'Title Sponsor' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/10/Associate-Partner-611x278.png', tier: 'Associate Partner', alt: 'Associate Partner' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/12/Official-Healthcare-Partner-299x142.png', tier: 'Official Healthcare Partner', alt: 'Healthcare Partner' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/11/Half-Marathon-Partner-768x383.png', tier: 'Half Marathon Partner', alt: 'Half Marathon Partner' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/10/316K-Run-Partner-768x300.png', tier: '31.6K Run Partner', alt: '31.6K Run Partner' },
-  { src: 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2025/10/10k-Run-Partner-768x379.png', tier: '10K Run Partner', alt: '10K Run Partner' },
+  { src: '/images/v4/title-sponsor.png', tier: 'Title', alt: 'Title Sponsor' },
+  { src: '/images/v4/associate-partner.png', tier: 'Associate Partner', alt: 'Associate Partner' },
+  { src: '/images/v4/healthcare-partner.png', tier: 'Official Healthcare Partner', alt: 'Healthcare Partner' },
+  { src: '/images/v4/half-marathon-partner.png', tier: 'Half Marathon Partner', alt: 'Half Marathon Partner' },
+  { src: '/images/v4/31k-partner.png', tier: '31.6K Run Partner', alt: '31.6K Run Partner' },
+  { src: '/images/v4/10k-partner.png', tier: '10K Run Partner', alt: '10K Run Partner' },
 ]
 
 const MISSIONS = [
@@ -126,7 +126,7 @@ function Hero() {
   return (
     <section style={{
       background: DARK_BG,
-      backgroundImage: 'url(https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/09/Layer-1-1024x683.png)',
+      backgroundImage: 'url(/images/v4/hero-bg.png)',
       backgroundSize: 'cover', backgroundPosition: 'center',
       paddingTop: 70, minHeight: '60vh',
       display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',

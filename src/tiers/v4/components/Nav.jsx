@@ -22,7 +22,7 @@ export default function Nav() {
     }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', height: 70, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Link to={BASE} style={{ textDecoration: 'none' }}>
-          <img src="https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/2024/07/BMM-Logo-1-1024x269.png" alt="CMM Logo" style={{ height: 50, objectFit: 'contain' }} />
+          <img src="/images/v4/logo.png" alt="CMM Logo" style={{ height: 50, objectFit: 'contain' }} />
         </Link>
         <div style={{ display: 'flex', gap: 0, alignItems: 'center' }}>
           {NAV_ITEMS.map(item => (
