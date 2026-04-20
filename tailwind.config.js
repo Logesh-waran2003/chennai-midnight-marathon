@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Bebas Neue"', 'sans-serif'],
-        body: ['"Crimson Pro"', 'Georgia', 'serif'],
+        display: ['"Outfit"', 'sans-serif'],
+        body: ['"DM Sans"', '-apple-system', 'sans-serif'],
       },
       colors: {
         brand: {
