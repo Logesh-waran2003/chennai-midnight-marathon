@@ -32,12 +32,21 @@ const TIERS = [
   },
   {
     id: 'v4',
-    name: 'Reference Replica',
+    name: 'Modern Interpretation',
     price: 'Baseline',
-    desc: 'Faithful recreation of the Bharat Midnight Marathon Bangalore website, adapted for Chennai.',
-    tags: ['Original design language', 'Proven layout', 'Event-standard', 'Familiar UX'],
-    accent: '#e53e3e',
-    bg: 'linear-gradient(135deg, #1a1a2e, #16213e)',
+    desc: 'Modern take on the reference site design language — light theme, Grechen Fuemen + Poppins + Archivo, orange accent.',
+    tags: ['Light theme', 'Grechen Fuemen + Poppins', 'Orange accent', '17 pages', 'React Router'],
+    accent: '#f56221',
+    bg: 'linear-gradient(135deg, #fff5f0, #ffe8db)',
+  },
+  {
+    id: 'v5',
+    name: 'Exact Replica',
+    price: 'Reference',
+    desc: 'Pixel-perfect clone of the Bharat Midnight Marathon Bangalore website. Same structure, fonts, colors, layout — adapted for Chennai.',
+    tags: ['Elementor structure', 'Exact CSS values', 'Browser-harness extracted', 'WordPress feel', '17 pages'],
+    accent: '#f56221',
+    bg: 'linear-gradient(135deg, #fefefe, #f0f0f0)',
   },
 ]
 
