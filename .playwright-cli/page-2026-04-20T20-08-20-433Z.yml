@@ -1,0 +1,338 @@
+- iframe [ref=e3]:
+  - generic [active] [ref=f4e1]:
+    - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+      - /url: "#content"
+    - banner [ref=f4e3]:
+      - generic [ref=f4e4]:
+        - link [ref=f4e8] [cursor=pointer]:
+          - /url: https://chennaimimdnightmarathon.run
+        - generic [ref=f4e11]:
+          - navigation "Menu" [ref=f4e12]:
+            - list [ref=f4e13]:
+              - listitem [ref=f4e14]:
+                - text: THE RACE
+                - list [ref=f4e15]:
+                  - listitem [ref=f4e16]:
+                    - link "Race Events" [ref=f4e17] [cursor=pointer]:
+                      - /url: /v5/races
+                  - listitem [ref=f4e18]:
+                    - link "Registration Terms" [ref=f4e19] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/registrationterms/
+                  - listitem [ref=f4e20]:
+                    - link "Running for Rookies" [ref=f4e21] [cursor=pointer]:
+                      - /url: /v5/rookies
+                  - listitem [ref=f4e22]:
+                    - link "Prize Money & Awards" [ref=f4e23] [cursor=pointer]:
+                      - /url: /v5/prizes
+                  - listitem [ref=f4e24]:
+                    - link "BIB Collection" [ref=f4e25] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=f4e26]:
+                    - link "Medical Advisory" [ref=f4e27] [cursor=pointer]:
+                      - /url: /v5/medical
+                  - listitem [ref=f4e28]:
+                    - link "Celebrity Ambassadors" [ref=f4e29] [cursor=pointer]:
+                      - /url: /v5/celebrities
+              - listitem [ref=f4e30]:
+                - text: PARTNERSHIP
+                - list [ref=f4e31]:
+                  - listitem [ref=f4e32]:
+                    - link "Opportunities" [ref=f4e33] [cursor=pointer]:
+                      - /url: /v5/opportunities
+                  - listitem [ref=f4e34]:
+                    - link "Partners" [ref=f4e35] [cursor=pointer]:
+                      - /url: /v5/partners
+              - listitem [ref=f4e36]:
+                - link "PHILANTHROPY" [ref=f4e37] [cursor=pointer]:
+                  - /url: https://rbitc.org/
+              - listitem [ref=f4e38]:
+                - text: ABOUT
+                - list [ref=f4e39]:
+                  - listitem [ref=f4e40]:
+                    - link "CMM" [ref=f4e41] [cursor=pointer]:
+                      - /url: /v5/about
+                  - listitem [ref=f4e42]:
+                    - link "RBITC" [ref=f4e43] [cursor=pointer]:
+                      - /url: /v5/rbitc
+              - listitem [ref=f4e44]:
+                - text: Race Route Map
+                - list [ref=f4e45]:
+                  - listitem [ref=f4e46]:
+                    - link "FASTENAL BK5K RUN @ 06:30 PM" [ref=f4e47] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/fastenal-bk5k-run-0630-pm/
+                  - listitem [ref=f4e48]:
+                    - link "FASTENAL 5K FUN RUN @ 06:40 PM" [ref=f4e49] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/fastenal-5k-fun-run-0640-pm-2/
+                  - listitem [ref=f4e50]:
+                    - link "AKAMAI 10K RUN @ 08:30 PM" [ref=f4e51] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/akamai-10k-run-0830-pm/
+                  - listitem [ref=f4e52]:
+                    - link "PHONEPE FULL MARATHON @ 11:00 PM" [ref=f4e53] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/phonepe-full-marathon-1100-pm/
+                  - listitem [ref=f4e54]:
+                    - link "WISSEN 31.6K RUN @ 11:10 PM" [ref=f4e55] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/wissen-316k-run-1110-pm/
+                  - listitem [ref=f4e56]:
+                    - link "AGRIPLAST HALF MARATHON @ 11:25 PM" [ref=f4e57] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/agriplast-half-marathon-1125-pm/
+              - listitem [ref=f4e58]:
+                - link "FAQs" [ref=f4e59] [cursor=pointer]:
+                  - /url: /v5/faqs
+          - button "Menu Toggle" [ref=f4e60]:
+            - img [ref=f4e61]
+            - img [ref=f4e63]
+            - text: Menu
+          - navigation [ref=f4e65]:
+            - list [ref=f4e66]:
+              - listitem [ref=f4e67]:
+                - text: THE RACE
+                - list [ref=f4e68]:
+                  - listitem [ref=f4e69]:
+                    - link [ref=f4e70] [cursor=pointer]:
+                      - /url: /v5/races
+                      - text: Race Events
+                  - listitem [ref=f4e71]:
+                    - link [ref=f4e72] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/registrationterms/
+                      - text: Registration Terms
+                  - listitem [ref=f4e73]:
+                    - link [ref=f4e74] [cursor=pointer]:
+                      - /url: /v5/rookies
+                      - text: Running for Rookies
+                  - listitem [ref=f4e75]:
+                    - link [ref=f4e76] [cursor=pointer]:
+                      - /url: /v5/prizes
+                      - text: Prize Money & Awards
+                  - listitem [ref=f4e77]:
+                    - link [ref=f4e78] [cursor=pointer]:
+                      - /url: "#"
+                      - text: BIB Collection
+                  - listitem [ref=f4e79]:
+                    - link [ref=f4e80] [cursor=pointer]:
+                      - /url: /v5/medical
+                      - text: Medical Advisory
+                  - listitem [ref=f4e81]:
+                    - link [ref=f4e82] [cursor=pointer]:
+                      - /url: /v5/celebrities
+                      - text: Celebrity Ambassadors
+              - listitem [ref=f4e83]:
+                - text: PARTNERSHIP
+                - list [ref=f4e84]:
+                  - listitem [ref=f4e85]:
+                    - link [ref=f4e86] [cursor=pointer]:
+                      - /url: /v5/opportunities
+                      - text: Opportunities
+                  - listitem [ref=f4e87]:
+                    - link [ref=f4e88] [cursor=pointer]:
+                      - /url: /v5/partners
+                      - text: Partners
+              - listitem [ref=f4e89]:
+                - link [ref=f4e90] [cursor=pointer]:
+                  - /url: https://rbitc.org/
+                  - text: PHILANTHROPY
+              - listitem [ref=f4e91]:
+                - text: ABOUT
+                - list [ref=f4e92]:
+                  - listitem [ref=f4e93]:
+                    - link [ref=f4e94] [cursor=pointer]:
+                      - /url: /v5/about
+                      - text: CMM
+                  - listitem [ref=f4e95]:
+                    - link [ref=f4e96] [cursor=pointer]:
+                      - /url: /v5/rbitc
+                      - text: RBITC
+              - listitem [ref=f4e97]:
+                - text: Race Route Map
+                - list [ref=f4e98]:
+                  - listitem [ref=f4e99]:
+                    - link [ref=f4e100] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/fastenal-bk5k-run-0630-pm/
+                      - text: FASTENAL BK5K RUN @ 06:30 PM
+                  - listitem [ref=f4e101]:
+                    - link [ref=f4e102] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/fastenal-5k-fun-run-0640-pm-2/
+                      - text: FASTENAL 5K FUN RUN @ 06:40 PM
+                  - listitem [ref=f4e103]:
+                    - link [ref=f4e104] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/akamai-10k-run-0830-pm/
+                      - text: AKAMAI 10K RUN @ 08:30 PM
+                  - listitem [ref=f4e105]:
+                    - link [ref=f4e106] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/phonepe-full-marathon-1100-pm/
+                      - text: PHONEPE FULL MARATHON @ 11:00 PM
+                  - listitem [ref=f4e107]:
+                    - link [ref=f4e108] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/wissen-316k-run-1110-pm/
+                      - text: WISSEN 31.6K RUN @ 11:10 PM
+                  - listitem [ref=f4e109]:
+                    - link [ref=f4e110] [cursor=pointer]:
+                      - /url: https://chennaimimdnightmarathon.run/agriplast-half-marathon-1125-pm/
+                      - text: AGRIPLAST HALF MARATHON @ 11:25 PM
+              - listitem [ref=f4e111]:
+                - link [ref=f4e112] [cursor=pointer]:
+                  - /url: /v5/faqs
+                  - text: FAQs
+    - main [ref=f4e113]:
+      - generic [ref=f4e115]:
+        - heading "Chennai Midnight Marathon" [level=2] [ref=f4e121]
+        - generic [ref=f4e124]:
+          - heading "The Origin" [level=2] [ref=f4e125]
+          - generic [ref=f4e127]:
+            - text: The name ‘marathon’ comes from the legend of Pheidippides, a Greek soldier, who was sent from the town of Marathon to Athens to announce that the Persians had been defeated in the Battle of Marathon. It is said that he ran the entire distance without stopping and burst into the Senate, exclaiming “Nenikékamen”, ‘We have won’ or ‘We are victorious’ before collapsing and dying of exhaustion.
+            - heading "Motivation" [level=4] [ref=f4e128]
+            - text: We are different, in essence, from other men. If you want to win something, run 100 meters. If you want to experience something, run a marathon – Emil Zatopek, Olympic Legend.
+        - generic "Tabs. Open items with Enter or Space, close with Escape and navigate using the Arrow keys." [ref=f4e135]:
+          - tablist [ref=f4e136]:
+            - tab "THE ORGANISERS" [selected] [ref=f4e137]
+            - tab "THE CAUSE" [ref=f4e138]
+            - tab "THE ESSENCE" [ref=f4e139]
+            - tab "THE OPPORTUNITY" [ref=f4e140]
+          - generic [ref=f4e141]:
+            - tabpanel "THE ORGANISERS" [ref=f4e142]:
+              - paragraph [ref=f4e147]: The humble efforts of a group of 25 like-minded people from RBITC culminated in the first edition of the Chennai Midnight Marathon on 19th May 2007, jointly organized with Crossover Sports Ltd., a leading sports and entertainment company. First of its kind in Asia, the event attracted more than 4,000 participants and was widely reported in India and the world over. Rotary Chennai IT Corridor (RBITC) was formed in June 2006 and has in the last many years funded and implemented several Community Projects in the area of primary health care, rural livelihood provision through vocational training programs, primary education by adopting government schools and supporting mid-day meal program and scores of other charitable, community service and environmental initiatives.
+            - tabpanel "THE CAUSE" [ref=f4e148]:
+              - generic [ref=f4e152]:
+                - paragraph [ref=f4e153]: "Professional athletes and enthusiastic runners alike join together to run for a specific cause each year, which forms the theme of the marathon. Such themes of previous editions include: ‘Run for a Child’ (2011) and ‘It’s fashionable to be Green ’ (2009 & 2010), which raised hundreds of thousands of rupees for the city. This year we ‘Run for Safe City’. This theme assumes special significance after the unprecedented incidents that have taken place, be it women safety or road rage or infrastructure or even building and Metro girders accidents."
+                - paragraph [ref=f4e154]: Lets break free. Lets Run Free again.
+            - tabpanel "THE ESSENCE" [ref=f4e155]:
+              - generic [ref=f4e159]:
+                - paragraph [ref=f4e160]: The Chennai Midnight Marathon represents the vision, vigor and vibrance of the beloved and inspiring city. At its heart, the initiative aimed to create a platform to raise funds for health, education, social welfare and rural enlistment projects. And in its successive years, the marathon has remained true to its simple purpose. Since inception, hundreds of people have raised money, generating funds that have provided free spinal and eye surgeries for the needy, scholarships for deserving youth, vocational training sponsorships, mid-day meals in schools, among many others.
+                - paragraph [ref=f4e161]: 16 editions of the Chennai Midnight Marathon have been held till date, with unprecedented success and support from local, national and international athletes. The race is more than just an athletic event; it is a glimpse into the cultural diversity of the state of Karnataka. In previous years, race day functions have included cultural performances of traditional Indian art forms, dancers, percussion artists as well as more western rock shows, giving a unique blend of a modern and ethnic flavor to the activities. The Pet-a-thon allows attendants to participate with their pets, giving a fun twist to the day’s events.
+            - tabpanel "THE OPPORTUNITY" [ref=f4e162]:
+              - generic [ref=f4e166]:
+                - paragraph [ref=f4e167]: The CMM reflects a unique spectrum of values which is shared by participants, their families and supporters across India and the world. Associations established with the marathon display not just a heart for social responsibility but also provide a platform for display and contact. Our partners share our values and also appreciate the opportunity of a wide reach and the overall brand leverage.
+                - paragraph [ref=f4e168]: All of Chennai comes out on race day to celebrate the spirit of the city. Companies participate in large numbers using the marathon as a platform to show support for the city, for employee engagement & brand visibility
+                - paragraph [ref=f4e169]: 100’s of NGOs participate to raise funds for and also to create awareness on their cause. The Sports & Film fraternity & celebrities participate to show their support for the city and also help select NGOs in raising funds.
+    - contentinfo [ref=f4e170]:
+      - generic [ref=f4e171]:
+        - generic [ref=f4e172]:
+          - heading "CMM" [level=6] [ref=f4e175]
+          - heading "Organised by Rotary Chennai IT Corridor (RBITC), the Chennai Midnight Marathon is India’s only midnight marathon and the most sought after flagship fund-raising event with scores of runners participating from over 20 countries to support the cause." [level=6] [ref=f4e178]
+          - list [ref=f4e181]:
+            - listitem [ref=f4e182]:
+              - 'link "Location : KTPO, Whitefield" [ref=f4e183] [cursor=pointer]':
+                - /url: mailto:contact@mysite.com
+            - listitem [ref=f4e184]:
+              - link "+91 9108356417" [ref=f4e185] [cursor=pointer]:
+                - /url: tel:%209108356417
+                - img [ref=f4e187]
+                - text: +91 9108356417
+            - listitem [ref=f4e189]:
+              - img [ref=f4e191]
+              - text: info@midnightmarathon.in
+        - generic [ref=f4e193]:
+          - heading "Site Link" [level=6] [ref=f4e196]
+          - generic [ref=f4e198]:
+            - navigation "Menu" [ref=f4e199]:
+              - list [ref=f4e200]:
+                - listitem [ref=f4e201]:
+                  - link "Provisional Results only" [ref=f4e202] [cursor=pointer]:
+                    - /url: https://shorturl.at/TPwL3
+                - listitem [ref=f4e203]:
+                  - link "Race Route Map" [ref=f4e204] [cursor=pointer]:
+                    - /url: /v5/route
+                - listitem [ref=f4e205]:
+                  - link "Contact Us" [ref=f4e206] [cursor=pointer]:
+                    - /url: /v5/contact
+                - listitem [ref=f4e207]:
+                  - link "FAQs" [ref=f4e208] [cursor=pointer]:
+                    - /url: /v5/faqs
+                - listitem [ref=f4e209]:
+                  - link "Rotary Chennai IT Corridor" [ref=f4e210] [cursor=pointer]:
+                    - /url: /v5/rbitc
+                - listitem [ref=f4e211]:
+                  - link "Chennai Midnight Marathon" [ref=f4e212] [cursor=pointer]:
+                    - /url: /v5/about
+                - listitem [ref=f4e213]:
+                  - link "Refund Policy" [ref=f4e214] [cursor=pointer]:
+                    - /url: /v5/refund
+                - listitem [ref=f4e215]:
+                  - link "Privacy Policy" [ref=f4e216] [cursor=pointer]:
+                    - /url: /v5/privacy
+                - listitem [ref=f4e217]:
+                  - link "Terms & Conditions" [ref=f4e218] [cursor=pointer]:
+                    - /url: /v5/terms
+            - navigation [ref=f4e219]:
+              - list [ref=f4e220]:
+                - listitem [ref=f4e221]:
+                  - link [ref=f4e222] [cursor=pointer]:
+                    - /url: https://shorturl.at/TPwL3
+                    - text: Provisional Results only
+                - listitem [ref=f4e223]:
+                  - link [ref=f4e224] [cursor=pointer]:
+                    - /url: /v5/route
+                    - text: Race Route Map
+                - listitem [ref=f4e225]:
+                  - link [ref=f4e226] [cursor=pointer]:
+                    - /url: /v5/contact
+                    - text: Contact Us
+                - listitem [ref=f4e227]:
+                  - link [ref=f4e228] [cursor=pointer]:
+                    - /url: /v5/faqs
+                    - text: FAQs
+                - listitem [ref=f4e229]:
+                  - link [ref=f4e230] [cursor=pointer]:
+                    - /url: /v5/rbitc
+                    - text: Rotary Chennai IT Corridor
+                - listitem [ref=f4e231]:
+                  - link [ref=f4e232] [cursor=pointer]:
+                    - /url: /v5/about
+                    - text: Chennai Midnight Marathon
+                - listitem [ref=f4e233]:
+                  - link [ref=f4e234] [cursor=pointer]:
+                    - /url: /v5/refund
+                    - text: Refund Policy
+                - listitem [ref=f4e235]:
+                  - link [ref=f4e236] [cursor=pointer]:
+                    - /url: /v5/privacy
+                    - text: Privacy Policy
+                - listitem [ref=f4e237]:
+                  - link [ref=f4e238] [cursor=pointer]:
+                    - /url: /v5/terms
+                    - text: Terms & Conditions
+        - generic [ref=f4e242]:
+          - generic [ref=f4e243]:
+            - link "Every great run needs a great support system — tha" [ref=f4e246] [cursor=pointer]:
+              - /url: https://www.instagram.com/p/DXWLQv2jNc1/
+            - link "Building homes. Backing communities. Thank you, Ma" [ref=f4e249] [cursor=pointer]:
+              - /url: https://www.instagram.com/p/DXOAKZWDIHa/
+            - link "We thank @phonepe for joining us on our journey to" [ref=f4e252] [cursor=pointer]:
+              - /url: https://www.instagram.com/p/DXI7uHHiGeV/
+            - link "We are happy to have made the day special 🎉 A birt" [ref=f4e255] [cursor=pointer]:
+              - /url: https://www.instagram.com/reel/DR9EaK8E7eB/
+              - text: We are happy to have made the day special 🎉 A birt
+              - img [ref=f4e256]
+            - link "Good vibes, cool weather, and a city that runs tog" [ref=f4e260] [cursor=pointer]:
+              - /url: https://www.instagram.com/reel/DR7mo_XEy0m/
+              - text: Good vibes, cool weather, and a city that runs tog
+              - img [ref=f4e261]
+          - generic [ref=f4e263]:
+            - button "Load More" [ref=f4e264]
+            - link "Follow on Instagram" [ref=f4e266] [cursor=pointer]:
+              - /url: https://www.instagram.com/bengalurumidnightmarathon/
+              - img [ref=f4e267]
+              - text: Follow on Instagram
+      - generic [ref=f4e270]:
+        - heading "Chennai Midnight Marathon" [level=2] [ref=f4e273]
+        - paragraph [ref=f4e276]: Copyright © 2023, Chennai Midnight Marathon
+        - list [ref=f4e279]:
+          - listitem [ref=f4e280]:
+            - link "Twitter" [ref=f4e281] [cursor=pointer]:
+              - /url: https://x.com/CMM_in
+              - text: Twitter
+              - img [ref=f4e282]
+          - listitem [ref=f4e284]:
+            - link "Facebook" [ref=f4e285] [cursor=pointer]:
+              - /url: https://www.facebook.com/midnightmarathon.in/
+              - text: Facebook
+              - img [ref=f4e286]
+          - listitem [ref=f4e288]:
+            - link "Youtube" [ref=f4e289] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCsvP-xdaWYjHsxNuk6NNwjQ
+              - text: Youtube
+              - img [ref=f4e290]
+          - listitem [ref=f4e292]:
+            - link "Instagram" [ref=f4e293] [cursor=pointer]:
+              - /url: https://www.instagram.com/bengalurumidnightmarathon/
+              - text: Instagram
+              - img [ref=f4e294]

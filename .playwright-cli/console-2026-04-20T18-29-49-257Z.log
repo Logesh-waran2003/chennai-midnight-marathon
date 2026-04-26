@@ -1,0 +1,107 @@
+[     552ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-PJEEZAML.js?v=3dce9be7:21550
+[     632ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/favicon.ico:0
+[     711ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.7:0
+[     711ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.0.3:0
+[     712ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.0.3:0
+[     713ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3:0
+[     713ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.0.3:0
+[     713ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5:0
+[     714ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1:0
+[     714ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.24.0-cloud9:0
+[     714ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.10.1:0
+[     715ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/instagram-feed/admin/assets/js/elementor-preview.js?ver=6.10.1:0
+[     715ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     715ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     715ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.24.0-cloud9:0
+[     716ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1:0
+[     716ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375:0
+[     716ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.24.0-cloud9:0
+[     716ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.24.0-cloud9:0
+[     721ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/grechenfuemen-vefi2_theq4d5obgkxbzzh0mavgb8tc.woff2 @ http://localhost:5173/v5-home.html:0
+[     721ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     723ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     727ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2 @ http://localhost:5173/v5-home.html:0
+[     727ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     730ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     877ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/v5/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.10.1:0
+[     881ms] ReferenceError: wp is not defined
+    at wp-i18n-js-after:2:1
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/grechenfuemen-vefi2_theq4d5obgkxbzzh0mavgb8tc.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     905ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] Failed to decode downloaded font: http://localhost:5173/css/v5/fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2 @ http://localhost:5173/v5-home.html:0
+[     906ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ http://localhost:5173/v5-home.html:0
+[   96894ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-PJEEZAML.js?v=3dce9be7:21550
+[   97379ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97379ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/notosanssorasompeng-plisfko5o6rzlfvnnvsioxm2_otrehpydlolapye7g.woff2:0
+[   97486ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/grechenfuemen-vefi2_theq4d5obgkxbzzh0mavgb8tc.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97486ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/grechenfuemen-vefi2_theq4d5obgkxbzzh0mavgb8tc.woff2:0
+[   97488ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1xlfq.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97488ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1xlfq.woff2:0
+[   97491ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97491ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2:0
+[   97492ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97493ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/archivo-k3kpo8udi-1m0wlsv9xaw6lqkqwy8q82slydoxi.woff2:0
+[   97504ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97505ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2:0
+[   97505ms] [ERROR] Access to font at 'https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5173/v5-home.html:0
+[   97505ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://bangalore.bharatmidnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2:0

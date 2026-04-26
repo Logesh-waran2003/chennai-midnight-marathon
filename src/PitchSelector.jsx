@@ -48,6 +48,15 @@ const TIERS = [
     accent: '#f56221',
     bg: 'linear-gradient(135deg, #fefefe, #f0f0f0)',
   },
+  {
+    id: 'v7',
+    name: 'Night City Run',
+    price: '₹2,50,000',
+    desc: 'Cinematic dark identity built for Chennai. Grain texture, bento race grid, animated SVG route map, live countdown, neon accents. Owns the midnight angle.',
+    tags: ['Dark + Grain', 'Bento Grid', 'SVG Route Map', 'Live Countdown', 'Framer Motion', 'Single Page'],
+    accent: '#22d3ee',
+    bg: 'linear-gradient(135deg, #080808, #0f1a1a)',
+  },
 ]
 
 function StarCanvas() {

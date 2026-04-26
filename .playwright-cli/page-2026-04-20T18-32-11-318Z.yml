@@ -1,0 +1,227 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]
+  - generic [ref=e6]:
+    - link "Final Timings & Certificate download" [ref=e18] [cursor=pointer]:
+      - /url: https://tinyurl.com/e8aeuwkt
+      - generic [ref=e20]: Final Timings & Certificate download
+    - generic [ref=e30]:
+      - heading "Partners 2025" [level=2] [ref=e33]
+      - region "Image Carousel" [ref=e36]:
+        - generic [ref=e37]:
+          - group "1 of 23" [ref=e38]:
+            - figure "Title" [ref=e39]:
+              - img "Title" [ref=e40]
+              - generic [ref=e42]: Title
+          - group "2 of 23" [ref=e43]:
+            - figure "Associate Partner" [ref=e44]:
+              - img "Associate Partner" [ref=e45]
+              - generic [ref=e47]: Associate Partner
+          - group "3 of 23" [ref=e48]:
+            - figure "Official Healthcare Partner" [ref=e49]:
+              - img "Official Healthcare Partner" [ref=e50]
+              - generic [ref=e52]: Official Healthcare Partner
+          - group "4 of 23" [ref=e53]:
+            - figure "Half Marathon Partner" [ref=e54]:
+              - img "Half Marathon Partner" [ref=e55]
+              - generic [ref=e57]: Half Marathon Partner
+          - group "5 of 23" [ref=e58]:
+            - figure "31.6K Run Partner" [ref=e59]:
+              - img "31.6K Run Partner" [ref=e60]
+              - generic [ref=e62]: 31.6K Run Partner
+          - group "6 of 23" [ref=e63]:
+            - figure "10k Run Partner" [ref=e64]:
+              - img "10k Run Partner" [ref=e65]
+              - generic [ref=e67]: 10k Run Partner
+          - group "7 of 23" [ref=e68]:
+            - figure "BK5K Race Partner BK5K Fun Run Partner" [ref=e69]:
+              - img "BK5K Race Partner BK5K Fun Run Partner" [ref=e70]
+              - generic [ref=e72]:
+                - text: BK5K Race Partner
+                - text: BK5K Fun Run Partner
+          - group "8 of 23" [ref=e73]:
+            - figure "Official Hospitality Partner" [ref=e74]:
+              - img "Official Hospitality Partner" [ref=e75]
+              - generic [ref=e77]: Official Hospitality Partner
+          - group "9 of 23" [ref=e78]:
+            - figure "Official Health Science Partner" [ref=e79]:
+              - img "Official Health Science Partner" [ref=e80]
+              - generic [ref=e82]: Official Health Science Partner
+          - group "10 of 23" [ref=e83]:
+            - figure "Official Hydration Parner" [ref=e84]:
+              - img "Official Hydration Parner" [ref=e85]
+              - generic [ref=e87]: Official Hydration Parner
+          - group "11 of 23" [ref=e88]:
+            - figure "Official Radio Partner" [ref=e89]:
+              - img "Official Radio Partner" [ref=e90]
+              - generic [ref=e92]: Official Radio Partner
+          - group "12 of 23" [ref=e93]:
+            - figure "Pet-a-thon Partner" [ref=e94]:
+              - img "Pet-a-thon Partner" [ref=e95]
+              - generic [ref=e97]: Pet-a-thon Partner
+          - group "13 of 23" [ref=e98]:
+            - figure "Official Music Streaming Partner" [ref=e99]:
+              - img "Official Music Streaming Partner" [ref=e100]
+              - generic [ref=e102]: Official Music Streaming Partner
+          - group "14 of 23" [ref=e103]:
+            - figure "Official Tourism Partner" [ref=e104]:
+              - img "Official Tourism Partner" [ref=e105]
+              - generic [ref=e107]: Official Tourism Partner
+          - group "15 of 23" [ref=e108]:
+            - figure "Official Grocery Partner" [ref=e109]:
+              - img "Official Grocery Partner" [ref=e110]
+              - generic [ref=e112]: Official Grocery Partner
+          - group "16 of 23" [ref=e113]:
+            - figure "Official Hotel Partner" [ref=e114]:
+              - img "Official Hotel Partner" [ref=e115]
+              - generic [ref=e117]: Official Hotel Partner
+          - group "17 of 23" [ref=e118]:
+            - figure "Official Wellness Partner" [ref=e119]:
+              - img "Official Wellness Partner" [ref=e120]
+              - generic [ref=e122]: Official Wellness Partner
+          - group "18 of 23" [ref=e123]:
+            - figure "Official Route Partner" [ref=e124]:
+              - img "Official Route Partner" [ref=e125]
+              - generic [ref=e127]: Official Route Partner
+          - group "19 of 23" [ref=e128]:
+            - figure "Official Biryani Partner" [ref=e129]:
+              - img "Official Biryani Partner" [ref=e130]
+              - generic [ref=e132]: Official Biryani Partner
+          - group "20 of 23" [ref=e133]:
+            - figure "Official Green Heart Partner" [ref=e134]:
+              - img "Official Green Heart Partner" [ref=e135]
+              - generic [ref=e137]: Official Green Heart Partner
+          - group "21 of 23" [ref=e138]:
+            - figure "Official Food Court Partner" [ref=e139]:
+              - img "Official Food Court Partner" [ref=e140]
+              - generic [ref=e142]: Official Food Court Partner
+          - group "22 of 23" [ref=e143]:
+            - figure "5K Runs Awards Partner" [ref=e144]:
+              - img "5K Runs Awards Partner" [ref=e145]
+              - generic [ref=e147]: 5K Runs Awards Partner
+          - group "23 of 23" [ref=e148]:
+            - figure "Official Souvenir Partner" [ref=e149]:
+              - img "Official Souvenir Partner" [ref=e150]
+              - generic [ref=e152]: Official Souvenir Partner
+    - generic [ref=e158]:
+      - generic [ref=e162]:
+        - heading "WHAT A NIGHT" [level=3] [ref=e163]:
+          - text: WHAT A
+          - text: NIGHT
+        - paragraph
+        - paragraph [ref=e164]: Covid stopped us….. the cyclone did not…… the runners ran through the rainy winter night.. Rotarians, the bikers, the rotractors, the sponsors beat the night.. Music blasted, drummers roared, spectators cheered on.
+        - text: 15 years on, each year the CMM growing in stature, keeping the community healthy, fixing the roads, helping the needy, showing the world what wonders a small team of rotarians can achieve…
+        - paragraph
+      - button "Play Video" [ref=e170] [cursor=pointer]:
+        - img [ref=e171]
+    - heading "Gear Up Now For Another Loooo….Oong Night On The 6th. (Dec.) At The 18th. Edition Of CMM 2025" [level=2] [ref=e176]
+    - generic [ref=e185]:
+      - heading "The CMM Story" [level=2] [ref=e188]
+      - heading "The Chennai Midnight Marathon represents the vision, vigour and vibrance of the beloved and inspiring city. The Chennai Midnight Marathon (CMM) was founded by Rotary Chennai IT Corridor in 2007 to support various deserving charities across India. With its unique chosen hours, it is Asia’s only Midnight Marathon. The concept has captivated people resulting in a growing number of participants, from over 20 countries, and 23 States in India, each year." [level=2] [ref=e192]:
+        - paragraph [ref=e193]:
+          - text: The Chennai Midnight Marathon represents the vision, vigour and vibrance of the beloved and inspiring city.
+          - text: The Chennai Midnight Marathon (CMM) was founded by Rotary Chennai IT Corridor in 2007 to support various deserving charities across India. With its unique chosen hours, it is Asia’s only Midnight Marathon. The concept has captivated people resulting in a growing number of participants, from over 20 countries, and 23 States in India, each year.
+  - contentinfo [ref=e199]:
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - heading "CMM" [level=6] [ref=e204]
+        - heading "Organised by Rotary Chennai IT Corridor (RCMM), the Chennai Midnight Marathon is India’s only midnight marathon and the most sought after flagship fund-raising event with scores of runners participating from over 20 countries to support the cause." [level=6] [ref=e207]
+        - list [ref=e210]:
+          - listitem [ref=e211]:
+            - 'link "Location : KTPO, Whitefield" [ref=e212] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e213]: "Location : KTPO, Whitefield"
+          - listitem [ref=e214]:
+            - link "+91 9108356417" [ref=e215] [cursor=pointer]:
+              - /url: tel:%209108356417
+              - img [ref=e217]
+              - generic [ref=e219]: +91 9108356417
+          - listitem [ref=e220]:
+            - img [ref=e222]
+            - generic [ref=e224]: info@midnightmarathon.in
+      - generic [ref=e225]:
+        - heading "Site Link" [level=6] [ref=e228]
+        - navigation "Menu" [ref=e231]:
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Provisional Results only" [ref=e234] [cursor=pointer]:
+                - /url: https://shorturl.at/TPwL3
+            - listitem [ref=e235]:
+              - link "Race Route Map" [ref=e236] [cursor=pointer]:
+                - /url: /v5/race-route-map/
+            - listitem [ref=e237]:
+              - link "Contact Us" [ref=e238] [cursor=pointer]:
+                - /url: /v5/contact-us/
+            - listitem [ref=e239]:
+              - link "FAQs" [ref=e240] [cursor=pointer]:
+                - /url: /v5/faqs/
+            - listitem [ref=e241]:
+              - link "Rotary Chennai IT Corridor" [ref=e242] [cursor=pointer]:
+                - /url: /v5/rbitc/
+            - listitem [ref=e243]:
+              - link "Chennai Midnight Marathon" [ref=e244] [cursor=pointer]:
+                - /url: /v5/about
+            - listitem [ref=e245]:
+              - link "Refund Policy" [ref=e246] [cursor=pointer]:
+                - /url: /v5/refund-policy/
+            - listitem [ref=e247]:
+              - link "Privacy Policy" [ref=e248] [cursor=pointer]:
+                - /url: /v5/privacy-policy/
+            - listitem [ref=e249]:
+              - link "Terms & Conditions" [ref=e250] [cursor=pointer]:
+                - /url: /v5/terms-and-conditions/
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - link "Every great run needs a great support system — tha" [ref=e258] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXWLQv2jNc1/
+            - generic: Every great run needs a great support system — tha
+            - img [ref=e259]
+          - link "Building homes. Backing communities. Thank you, Ma" [ref=e262] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXOAKZWDIHa/
+            - generic: Building homes. Backing communities. Thank you, Ma
+            - img [ref=e263]
+          - link "We thank @phonepe for joining us on our journey to" [ref=e266] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXI7uHHiGeV/
+            - generic: We thank @phonepe for joining us on our journey to
+            - img [ref=e267]
+          - link "We are happy to have made the day special 🎉 A birt" [ref=e270] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DR9EaK8E7eB/
+            - generic: We are happy to have made the day special 🎉 A birt
+            - img [ref=e271]
+            - img [ref=e273]
+          - link "Good vibes, cool weather, and a city that runs tog" [ref=e276] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DR7mo_XEy0m/
+            - generic: Good vibes, cool weather, and a city that runs tog
+            - img [ref=e277]
+            - img [ref=e279]
+        - generic [ref=e280]:
+          - button "Load More" [ref=e281] [cursor=pointer]: Load More
+          - link "Follow on Instagram" [ref=e284] [cursor=pointer]:
+            - /url: https://www.instagram.com/chennaimidnightmarathon/
+            - img [ref=e285]
+            - text: Follow on Instagram
+    - generic [ref=e288]:
+      - heading "Chennai Midnight Marathon" [level=2] [ref=e291]
+      - paragraph [ref=e294]: Copyright © 2023, Chennai Midnight Marathon
+      - list [ref=e297]:
+        - listitem [ref=e298]:
+          - link "Twitter" [ref=e299] [cursor=pointer]:
+            - /url: https://x.com/CMM_in
+            - generic [ref=e300]: Twitter
+            - img [ref=e301]
+        - listitem [ref=e303]:
+          - link "Facebook" [ref=e304] [cursor=pointer]:
+            - /url: https://www.facebook.com/midnightmarathon.in/
+            - generic [ref=e305]: Facebook
+            - img [ref=e306]
+        - listitem [ref=e308]:
+          - link "Youtube" [ref=e309] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCsvP-xdaWYjHsxNuk6NNwjQ
+            - generic [ref=e310]: Youtube
+            - img [ref=e311]
+        - listitem [ref=e313]:
+          - link "Instagram" [ref=e314] [cursor=pointer]:
+            - /url: https://www.instagram.com/chennaimidnightmarathon/
+            - generic [ref=e315]: Instagram
+            - img [ref=e316]

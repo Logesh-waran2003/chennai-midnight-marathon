@@ -56,6 +56,7 @@ import V5Route from './tiers/v5/pages/Route'
 import V5Privacy from './tiers/v5/pages/Privacy'
 import V5Refund from './tiers/v5/pages/Refund'
 import V5Terms from './tiers/v5/pages/Terms'
+import V7Layout from './tiers/v7/V7Layout'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -120,6 +121,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="refund" element={<V5Refund />} />
           <Route path="terms" element={<V5Terms />} />
         </Route>
+        <Route path="v7" element={<V7Layout />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,0 +1,26 @@
+[     138ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-PJEEZAML.js?v=3dce9be7:21550
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.0.3:0
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/css/post-563.css?ver=1776695001:0
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/css/post-1212.css?ver=1776697684:0
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-nested-tabs.min.css?ver=4.0.3:0
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.7:0
+[     234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.7:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.7:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.24.0-cloud9:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.0.3:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.0.3:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.0.3:0
+[     235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.0.3:0
+[     241ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=4.0.3:0
+[     242ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.0.3:0
+[     242ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/all-in-one-seo-pack/dist/Lite/assets/css/table-of-contents/global.e90f6d47.css?ver=4.9.6.2:0
+[     242ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.1:0
+[     242ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/css/post-542.css?ver=1776695000:0
+[     242ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.0.3:0
+[     246ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/css/post-558.css?ver=1776695001:0
+[     246ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/css/poppins.css?ver=1742278879:0
+[     246ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/css/grechenfuemen.css?ver=1742278879:0
+[     246ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/elementor/google-fonts/css/notosanssorasompeng.css?ver=1742278880:0
+[     247ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/2024/07/Rotary.png:0
+[     247ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/uploads/sites/10/2024/08/bmm-1.png:0
+[     248ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chennaimimdnightmarathon.run/wp-content/plugins/instagram-feed/img/placeholder.png:0

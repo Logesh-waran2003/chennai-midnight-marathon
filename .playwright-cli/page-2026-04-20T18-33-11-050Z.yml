@@ -1,0 +1,279 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]
+  - generic [ref=e8]:
+    - link "Final Timings & Certificate download" [ref=e20] [cursor=pointer]:
+      - /url: https://tinyurl.com/e8aeuwkt
+      - generic [ref=e22]: Final Timings & Certificate download
+    - generic [ref=e32]:
+      - heading "Partners 2025" [level=2] [ref=e35]
+      - region "Image Carousel" [ref=e38]:
+        - generic [ref=e39]:
+          - group [ref=e40]:
+            - figure [ref=e41]:
+              - img [ref=e42]
+              - generic [ref=e44]: Official Route Partner
+          - group [ref=e45]:
+            - figure [ref=e46]:
+              - img [ref=e47]
+              - generic [ref=e49]: Official Biryani Partner
+          - group [ref=e50]:
+            - figure [ref=e51]:
+              - img [ref=e52]
+              - generic [ref=e54]: Official Green Heart Partner
+          - group [ref=e55]:
+            - figure [ref=e56]:
+              - img [ref=e57]
+              - generic [ref=e59]: Official Food Court Partner
+          - group [ref=e60]:
+            - figure [ref=e61]:
+              - img [ref=e62]
+              - generic [ref=e64]: 5K Runs Awards Partner
+          - group [ref=e65]:
+            - figure [ref=e66]:
+              - img [ref=e67]
+              - generic [ref=e69]: Official Souvenir Partner
+          - group "1 / 23" [ref=e70]:
+            - figure "Title" [ref=e71]:
+              - img "Title" [ref=e72]
+              - generic [ref=e74]: Title
+          - group "2 / 23" [ref=e75]:
+            - figure "Associate Partner" [ref=e76]:
+              - img "Associate Partner" [ref=e77]
+              - generic [ref=e79]: Associate Partner
+          - group "3 / 23" [ref=e80]:
+            - figure "Official Healthcare Partner" [ref=e81]:
+              - img "Official Healthcare Partner" [ref=e82]
+              - generic [ref=e84]: Official Healthcare Partner
+          - group "4 / 23" [ref=e85]:
+            - figure "Half Marathon Partner" [ref=e86]:
+              - img "Half Marathon Partner" [ref=e87]
+              - generic [ref=e89]: Half Marathon Partner
+          - group "5 / 23" [ref=e90]:
+            - figure "31.6K Run Partner" [ref=e91]:
+              - img "31.6K Run Partner" [ref=e92]
+              - generic [ref=e94]: 31.6K Run Partner
+          - group "6 / 23" [ref=e95]:
+            - figure "10k Run Partner" [ref=e96]:
+              - img "10k Run Partner" [ref=e97]
+              - generic [ref=e99]: 10k Run Partner
+          - group [ref=e100]:
+            - figure [ref=e101]:
+              - img [ref=e102]
+              - generic [ref=e104]: BK5K Race Partner BK5K Fun Run Partner
+          - group [ref=e105]:
+            - figure [ref=e106]:
+              - img [ref=e107]
+              - generic [ref=e109]: Official Hospitality Partner
+          - group [ref=e110]:
+            - figure [ref=e111]:
+              - img [ref=e112]
+              - generic [ref=e114]: Official Health Science Partner
+          - group [ref=e115]:
+            - figure [ref=e116]:
+              - img [ref=e117]
+              - generic [ref=e119]: Official Hydration Parner
+          - group [ref=e120]:
+            - figure [ref=e121]:
+              - img [ref=e122]
+              - generic [ref=e124]: Official Radio Partner
+          - group [ref=e125]:
+            - figure [ref=e126]:
+              - img [ref=e127]
+              - generic [ref=e129]: Pet-a-thon Partner
+          - group [ref=e130]:
+            - figure [ref=e131]:
+              - img [ref=e132]
+              - generic [ref=e134]: Official Music Streaming Partner
+          - group [ref=e135]:
+            - figure [ref=e136]:
+              - img [ref=e137]
+              - generic [ref=e139]: Official Tourism Partner
+          - group [ref=e140]:
+            - figure [ref=e141]:
+              - img [ref=e142]
+              - generic [ref=e144]: Official Grocery Partner
+          - group [ref=e145]:
+            - figure [ref=e146]:
+              - img [ref=e147]
+              - generic [ref=e149]: Official Hotel Partner
+          - group [ref=e150]:
+            - figure [ref=e151]:
+              - img [ref=e152]
+              - generic [ref=e154]: Official Wellness Partner
+          - group [ref=e155]:
+            - figure [ref=e156]:
+              - img [ref=e157]
+              - generic [ref=e159]: Official Route Partner
+          - group [ref=e160]:
+            - figure [ref=e161]:
+              - img [ref=e162]
+              - generic [ref=e164]: Official Biryani Partner
+          - group [ref=e165]:
+            - figure [ref=e166]:
+              - img [ref=e167]
+              - generic [ref=e169]: Official Green Heart Partner
+          - group [ref=e170]:
+            - figure [ref=e171]:
+              - img [ref=e172]
+              - generic [ref=e174]: Official Food Court Partner
+          - group [ref=e175]:
+            - figure [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e179]: 5K Runs Awards Partner
+          - group [ref=e180]:
+            - figure [ref=e181]:
+              - img [ref=e182]
+              - generic [ref=e184]: Official Souvenir Partner
+          - group [ref=e185]:
+            - figure [ref=e186]:
+              - img [ref=e187]
+              - generic [ref=e189]: Title
+          - group [ref=e190]:
+            - figure [ref=e191]:
+              - img [ref=e192]
+              - generic [ref=e194]: Associate Partner
+          - group [ref=e195]:
+            - figure [ref=e196]:
+              - img [ref=e197]
+              - generic [ref=e199]: Official Healthcare Partner
+          - group [ref=e200]:
+            - figure [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e204]: Half Marathon Partner
+          - group [ref=e205]:
+            - figure [ref=e206]:
+              - img [ref=e207]
+              - generic [ref=e209]: 31.6K Run Partner
+          - group [ref=e210]:
+            - figure [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e214]: 10k Run Partner
+        - generic [ref=e215]:
+          - button "Go to slide 1" [ref=e216] [cursor=pointer]
+          - button "Go to slide 2" [ref=e217] [cursor=pointer]
+          - button "Go to slide 3" [ref=e218] [cursor=pointer]
+          - button "Go to slide 4" [ref=e219] [cursor=pointer]
+    - generic [ref=e225]:
+      - generic [ref=e229]:
+        - heading "WHAT A NIGHT" [level=3] [ref=e230]:
+          - text: WHAT A
+          - text: NIGHT
+        - paragraph
+        - paragraph [ref=e231]: Covid stopped us….. the cyclone did not…… the runners ran through the rainy winter night.. Rotarians, the bikers, the rotractors, the sponsors beat the night.. Music blasted, drummers roared, spectators cheered on.
+        - text: 15 years on, each year the BMM growing in stature, keeping the community healthy, fixing the roads, helping the needy, showing the world what wonders a small team of rotarians can achieve…
+        - paragraph
+      - button "Play Video" [ref=e237] [cursor=pointer]:
+        - img [ref=e238]
+    - heading "Gear Up Now For Another Loooo….Oong Night On The 6th. (Dec.) At The 18th. Edition Of BMM 2025" [level=2] [ref=e243]
+    - generic [ref=e252]:
+      - heading "The BMM Story" [level=2] [ref=e255]
+      - heading "The Bengaluru Midnight Marathon represents the vision, vigour and vibrance of the beloved and inspiring city. The Bengaluru Midnight Marathon (BMM) was founded by Rotary Bangalore IT Corridor in 2007 to support various deserving charities across India. With its unique chosen hours, it is Asia’s only Midnight Marathon. The concept has captivated people resulting in a growing number of participants, from over 20 countries, and 23 States in India, each year." [level=2] [ref=e259]:
+        - paragraph [ref=e260]:
+          - text: The Bengaluru Midnight Marathon represents the vision, vigour and vibrance of the beloved and inspiring city.
+          - text: The Bengaluru Midnight Marathon (BMM) was founded by Rotary Bangalore IT Corridor in 2007 to support various deserving charities across India. With its unique chosen hours, it is Asia’s only Midnight Marathon. The concept has captivated people resulting in a growing number of participants, from over 20 countries, and 23 States in India, each year.
+  - contentinfo [ref=e266]:
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - heading "BMM" [level=6] [ref=e271]
+        - heading "Organised by Rotary Bengaluru IT Corridor (RBITC), the Bengaluru Midnight Marathon is India’s only midnight marathon and the most sought after flagship fund-raising event with scores of runners participating from over 20 countries to support the cause." [level=6] [ref=e274]
+        - list [ref=e277]:
+          - listitem [ref=e278]:
+            - 'link "Location : KTPO, Whitefield" [ref=e279] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e280]: "Location : KTPO, Whitefield"
+          - listitem [ref=e281]:
+            - link "+91 9108356417" [ref=e282] [cursor=pointer]:
+              - /url: tel:%209108356417
+              - img [ref=e284]
+              - generic [ref=e286]: +91 9108356417
+          - listitem [ref=e287]:
+            - img [ref=e289]
+            - generic [ref=e291]: info@midnightmarathon.in
+      - generic [ref=e292]:
+        - heading "Site Link" [level=6] [ref=e295]
+        - navigation "Menu" [ref=e298]:
+          - list [ref=e299]:
+            - listitem [ref=e300]:
+              - link "Provisional Results only" [ref=e301] [cursor=pointer]:
+                - /url: https://shorturl.at/TPwL3
+            - listitem [ref=e302]:
+              - link "Race Route Map" [ref=e303] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/race-route-map/
+            - listitem [ref=e304]:
+              - link "Contact Us" [ref=e305] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/contact-us/
+            - listitem [ref=e306]:
+              - link "FAQs" [ref=e307] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/faqs/
+            - listitem [ref=e308]:
+              - link "Rotary Bangalore IT Corridor" [ref=e309] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/rbitc/
+            - listitem [ref=e310]:
+              - link "Bengaluru Midnight Marathon" [ref=e311] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/bengaluru-midnight-marathon/
+            - listitem [ref=e312]:
+              - link "Refund Policy" [ref=e313] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/refund-policy/
+            - listitem [ref=e314]:
+              - link "Privacy Policy" [ref=e315] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/privacy-policy/
+            - listitem [ref=e316]:
+              - link "Terms & Conditions" [ref=e317] [cursor=pointer]:
+                - /url: https://bangalore.bharatmidnightmarathon.run/terms-and-conditions/
+      - generic [ref=e321]:
+        - generic [ref=e322]:
+          - link "Every great run needs a great support system — tha" [ref=e325] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXWLQv2jNc1/
+            - generic: Every great run needs a great support system — tha
+            - img [ref=e326]
+          - link "Building homes. Backing communities. Thank you, Ma" [ref=e329] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXOAKZWDIHa/
+            - generic: Building homes. Backing communities. Thank you, Ma
+            - img [ref=e330]
+          - link "We thank @phonepe for joining us on our journey to" [ref=e333] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DXI7uHHiGeV/
+            - generic: We thank @phonepe for joining us on our journey to
+            - img [ref=e334]
+          - link "We are happy to have made the day special 🎉 A birt" [ref=e337] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DR9EaK8E7eB/
+            - generic: We are happy to have made the day special 🎉 A birt
+            - img [ref=e338]
+            - img [ref=e340]
+          - link "Good vibes, cool weather, and a city that runs tog" [ref=e343] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DR7mo_XEy0m/
+            - generic: Good vibes, cool weather, and a city that runs tog
+            - img [ref=e344]
+            - img [ref=e346]
+        - generic [ref=e347]:
+          - button "Load More" [ref=e348] [cursor=pointer]: Load More
+          - link "Follow on Instagram" [ref=e351] [cursor=pointer]:
+            - /url: https://www.instagram.com/bengalurumidnightmarathon/
+            - img [ref=e352]
+            - text: Follow on Instagram
+    - generic [ref=e355]:
+      - heading "Bengaluru Midnight Marathon" [level=2] [ref=e358]
+      - paragraph [ref=e361]: Copyright © 2023, Bengaluru Midnight Marathon
+      - list [ref=e364]:
+        - listitem [ref=e365]:
+          - link "Twitter" [ref=e366] [cursor=pointer]:
+            - /url: https://x.com/BMM_in
+            - generic [ref=e367]: Twitter
+            - img [ref=e368]
+        - listitem [ref=e370]:
+          - link "Facebook" [ref=e371] [cursor=pointer]:
+            - /url: https://www.facebook.com/midnightmarathon.in/
+            - generic [ref=e372]: Facebook
+            - img [ref=e373]
+        - listitem [ref=e375]:
+          - link "Youtube" [ref=e376] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCsvP-xdaWYjHsxNuk6NNwjQ
+            - generic [ref=e377]: Youtube
+            - img [ref=e378]
+        - listitem [ref=e380]:
+          - link "Instagram" [ref=e381] [cursor=pointer]:
+            - /url: https://www.instagram.com/bengalurumidnightmarathon/
+            - generic [ref=e382]: Instagram
+            - img [ref=e383]
+  - generic [ref=e385]: desktop

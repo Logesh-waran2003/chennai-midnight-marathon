@@ -2,3 +2,5 @@ node_modules/
 dist/
 .claude/worktrees/
 excalidraw.log
+.aidesigner/*
+!.aidesigner/.gitkeep
