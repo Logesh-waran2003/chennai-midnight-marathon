@@ -1,6 +1,8 @@
 node_modules/
 dist/
-.claude/worktrees/
+.claude/
+.agents/
+.aidesigner/
+.mcp.json
+.playwright-cli/
 excalidraw.log
-.aidesigner/*
-!.aidesigner/.gitkeep
