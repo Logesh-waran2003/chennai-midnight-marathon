@@ -60,6 +60,16 @@ function useCountdown(target) {
   return t
 }
 
+// ── useIsMobile ────────────────────────────────────────────────
+function useIsMobile(bp = 768) {
+  const [mobile, setMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < bp)
+  useEffect(() => {
+    const fn = () => setMobile(window.innerWidth < bp)
+    window.addEventListener('resize', fn); return () => window.removeEventListener('resize', fn)
+  }, [bp])
+  return mobile
+}
+
 // ── CountUp ────────────────────────────────────────────────────
 function CountUp({ to, suffix = '' }) {
   const [val, setVal] = useState(0)
@@ -102,132 +112,89 @@ function CustomCursor() {
 // ── Nav ────────────────────────────────────────────────────────
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
+  const mobile = useIsMobile()
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 10)
-    fn()
-    window.addEventListener('scroll', fn); return () => window.removeEventListener('scroll', fn)
+    fn(); window.addEventListener('scroll', fn); return () => window.removeEventListener('scroll', fn)
   }, [])
   return (
-    <nav style={{
-      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 40,
-      height: 56, padding: '0 48px',
-      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      background: 'rgba(255,255,255,0.96)',
-      backdropFilter: 'blur(20px)',
-      borderBottom: `1px solid ${scrolled ? T.border : 'transparent'}`,
-      transition: 'border-color 0.25s',
-    }}>
+    <nav style={{ position:'fixed', top:0, left:0, right:0, zIndex:40, height:56, padding:'0 24px', display:'flex', alignItems:'center', justifyContent:'space-between', background:'rgba(255,255,255,0.96)', backdropFilter:'blur(20px)', borderBottom:`1px solid ${scrolled ? T.border : 'transparent'}`, transition:'border-color 0.25s' }}>
       <div style={{ display:'flex', flexDirection:'column', lineHeight:1 }}>
-        <span style={{ fontFamily: T.display, fontWeight: 900, fontSize: 15, color: T.black, letterSpacing: '-0.5px' }}>
-          CMM <span style={{ color: T.orange }}>·</span> 2026
-        </span>
-        <span style={{ fontFamily: T.body, fontSize: 10, color: T.gray2, letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 2 }}>Chennai Midnight Marathon</span>
+        <span style={{ fontFamily:T.display, fontWeight:900, fontSize:15, color:T.black, letterSpacing:'-0.5px' }}>CMM <span style={{ color:T.orange }}>·</span> 2026</span>
+        {!mobile && <span style={{ fontFamily:T.body, fontSize:10, color:T.gray2, letterSpacing:'0.15em', textTransform:'uppercase', marginTop:2 }}>Chennai Midnight Marathon</span>}
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-        {['Races','Route','Prizes','Partners'].map(l => (
-          <a key={l} href={`#${l.toLowerCase()}`} style={{ fontFamily: T.body, fontSize: 13, color: T.gray, padding: '6px 12px', textDecoration: 'none', transition: 'color 0.15s', borderRadius: 2 }}
-            onMouseEnter={e => e.target.style.color = T.black}
-            onMouseLeave={e => e.target.style.color = T.gray}>{l}</a>
-        ))}
-        <a href="#register" style={{ fontFamily: T.body, fontWeight: 700, fontSize: 11, letterSpacing: '0.12em', padding: '9px 22px', background: T.orange, color: '#fff', borderRadius: 2, textDecoration: 'none', marginLeft: 16, transition: 'opacity 0.15s' }}
-          onMouseEnter={e => e.target.style.opacity = '0.85'}
-          onMouseLeave={e => e.target.style.opacity = '1'}>
-          REGISTER
-        </a>
-      </div>
+      {mobile ? (
+        <a href="#register" style={{ fontFamily:T.body, fontWeight:700, fontSize:11, letterSpacing:'0.12em', padding:'9px 18px', background:T.orange, color:'#fff', borderRadius:2, textDecoration:'none' }}>REGISTER</a>
+      ) : (
+        <div style={{ display:'flex', alignItems:'center', gap:2 }}>
+          {['Races','Route','Prizes','Partners'].map(l => (
+            <a key={l} href={`#${l.toLowerCase()}`} style={{ fontFamily:T.body, fontSize:13, color:T.gray, padding:'6px 12px', textDecoration:'none', transition:'color 0.15s', borderRadius:2 }}
+              onMouseEnter={e => e.target.style.color = T.black}
+              onMouseLeave={e => e.target.style.color = T.gray}>{l}</a>
+          ))}
+          <a href="#register" style={{ fontFamily:T.body, fontWeight:700, fontSize:11, letterSpacing:'0.12em', padding:'9px 22px', background:T.orange, color:'#fff', borderRadius:2, textDecoration:'none', marginLeft:16, transition:'opacity 0.15s' }}
+            onMouseEnter={e => e.target.style.opacity='0.85'} onMouseLeave={e => e.target.style.opacity='1'}>REGISTER</a>
+        </div>
+      )}
     </nav>
   )
 }
 
 // ── Hero ───────────────────────────────────────────────────────
 function Hero() {
+  const mobile = useIsMobile()
   const cd = useCountdown('2026-12-05T23:00:00+05:30')
   const { scrollY } = useScroll()
   const bgY = useTransform(scrollY, [0, 600], [0, 60])
+  const pad = mobile ? '0 20px' : '0 80px'
 
   return (
-    <section style={{ minHeight: '100vh', background: T.bg, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 0 72px', position: 'relative', overflow: 'hidden' }}>
-      {/* Faint grid */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none',
-        backgroundImage: `linear-gradient(${T.border} 1px, transparent 1px), linear-gradient(90deg, ${T.border} 1px, transparent 1px)`,
-        backgroundSize: '80px 80px', opacity: 0.5,
-      }} />
-
-      {/* Ghost number */}
-      <motion.div style={{ y: bgY, position: 'absolute', right: -20, bottom: 40, pointerEvents: 'none', zIndex: 0 }}>
-        <span style={{ fontFamily: T.display, fontWeight: 900, fontSize: 'clamp(180px,28vw,380px)', color: 'rgba(245,98,33,0.06)', lineHeight: 1, letterSpacing: '-8px', userSelect: 'none' }}>
-          31.6
-        </span>
-      </motion.div>
-
-      {/* Vertical label */}
-      <div style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%) rotate(-90deg)', transformOrigin: 'center', zIndex: 2 }}>
-        <span style={{ fontFamily: T.body, fontSize: 10, letterSpacing: '0.3em', color: T.gray2, textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-          Chennai · India · 2026
-        </span>
-      </div>
-
-      <div style={{ position: 'relative', zIndex: 1, padding: '0 80px' }}>
-        {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}
-          style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}
-        >
-          <div style={{ width: 28, height: 2, background: T.orange }} />
-          <span style={{ fontFamily: T.body, fontSize: 11, letterSpacing: '0.3em', textTransform: 'uppercase', color: T.orange }}>
-            December 5, 2026 · 11:00 PM
-          </span>
+    <section style={{ minHeight:'100vh', background:T.bg, display:'flex', flexDirection:'column', justifyContent:'flex-end', padding:`0 0 ${mobile?48:72}px`, position:'relative', overflow:'hidden' }}>
+      <div style={{ position:'absolute', inset:0, pointerEvents:'none', backgroundImage:`linear-gradient(${T.border} 1px, transparent 1px), linear-gradient(90deg, ${T.border} 1px, transparent 1px)`, backgroundSize:'80px 80px', opacity:0.5 }} />
+      {!mobile && (
+        <motion.div style={{ y:bgY, position:'absolute', right:-20, bottom:40, pointerEvents:'none', zIndex:0 }}>
+          <span style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(180px,28vw,380px)', color:'rgba(245,98,33,0.06)', lineHeight:1, letterSpacing:'-8px', userSelect:'none' }}>31.6</span>
         </motion.div>
-
-        {/* Headline */}
-        <div style={{ marginBottom: 52 }}>
+      )}
+      {!mobile && (
+        <div style={{ position:'absolute', left:16, top:'50%', transform:'translateY(-50%) rotate(-90deg)', transformOrigin:'center', zIndex:2 }}>
+          <span style={{ fontFamily:T.body, fontSize:10, letterSpacing:'0.3em', color:T.gray2, textTransform:'uppercase', whiteSpace:'nowrap' }}>Chennai · India · 2026</span>
+        </div>
+      )}
+      <div style={{ position:'relative', zIndex:1, padding:pad }}>
+        <motion.div initial={{opacity:0,x:-16}} animate={{opacity:1,x:0}} transition={{delay:0.2}}
+          style={{ display:'flex', alignItems:'center', gap:12, marginBottom:20 }}>
+          <div style={{ width:28, height:2, background:T.orange }} />
+          <span style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.orange }}>December 5, 2026 · 11:00 PM</span>
+        </motion.div>
+        <div style={{ marginBottom: mobile ? 32 : 52 }}>
           {[
-            { word: 'CHENNAI',  color: T.black,  stroke: 'none' },
-            { word: 'MIDNIGHT', color: 'transparent', stroke: `1.5px ${T.black}` },
-            { word: 'MARATHON', color: T.orange,  stroke: 'none' },
+            { word:'CHENNAI',  color:T.black,       stroke:'none' },
+            { word:'MIDNIGHT', color:'transparent',  stroke:`1.5px ${T.black}` },
+            { word:'MARATHON', color:T.orange,       stroke:'none' },
           ].map(({ word, color, stroke }, i) => (
-            <motion.div key={word}
-              initial={{ opacity: 0, x: -32 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 + i * 0.12, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <span style={{
-                fontFamily: T.display, fontWeight: 900,
-                fontSize: 'clamp(3.8rem, 11vw, 9.5rem)',
-                lineHeight: 0.88, letterSpacing: '-4px',
-                color, WebkitTextStroke: stroke, display: 'block',
-              }}>{word}</span>
+            <motion.div key={word} initial={{opacity:0,x:-32}} animate={{opacity:1,x:0}} transition={{delay:0.3+i*0.12,duration:0.8,ease:[0.16,1,0.3,1]}}>
+              <span style={{ fontFamily:T.display, fontWeight:900, fontSize: mobile ? 'clamp(3rem,18vw,5rem)' : 'clamp(3.8rem,11vw,9.5rem)', lineHeight:0.88, letterSpacing:'-4px', color, WebkitTextStroke:stroke, display:'block' }}>{word}</span>
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom row */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}
-          style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: 32 }}
-        >
-          <div style={{ maxWidth: 340 }}>
-            <p style={{ fontFamily: T.body, fontSize: 14, color: T.gray, lineHeight: 1.75, marginBottom: 24 }}>
+        <motion.div initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:0.8}}
+          style={{ display:'flex', flexDirection: mobile ? 'column' : 'row', alignItems: mobile ? 'flex-start' : 'flex-end', justifyContent:'space-between', gap:32 }}>
+          <div style={{ maxWidth:340 }}>
+            <p style={{ fontFamily:T.body, fontSize:14, color:T.gray, lineHeight:1.75, marginBottom:24 }}>
               Run the city when it sleeps. Chennai's premier midnight running event — 5K, 10K, Half Marathon, and the iconic 31.6K.
             </p>
-            <div style={{ display: 'flex', gap: 10 }}>
-              <a href="#register" style={{ fontFamily: T.body, fontWeight: 700, fontSize: 12, letterSpacing: '0.08em', padding: '12px 28px', background: T.orange, color: '#fff', textDecoration: 'none', borderRadius: 2 }}>
-                REGISTER NOW
-              </a>
-              <a href="#races" style={{ fontFamily: T.body, fontWeight: 500, fontSize: 12, padding: '11px 20px', border: `1px solid ${T.border}`, color: T.gray, textDecoration: 'none', borderRadius: 2, background: T.bg }}>
-                View Races
-              </a>
+            <div style={{ display:'flex', gap:10, flexWrap:'wrap' }}>
+              <a href="#register" style={{ fontFamily:T.body, fontWeight:700, fontSize:12, letterSpacing:'0.08em', padding:'12px 28px', background:T.orange, color:'#fff', textDecoration:'none', borderRadius:2 }}>REGISTER NOW</a>
+              <a href="#races" style={{ fontFamily:T.body, fontWeight:500, fontSize:12, padding:'11px 20px', border:`1px solid ${T.border}`, color:T.gray, textDecoration:'none', borderRadius:2, background:T.bg }}>View Races</a>
             </div>
           </div>
-
-          {/* Countdown */}
-          <div style={{ display: 'flex', gap: 0, border: `1px solid ${T.border}`, background: T.bg }}>
-            {[['d','Days'],['h','Hrs'],['m','Min'],['s','Sec']].map(([k, label], i) => (
-              <div key={k} style={{ textAlign: 'center', padding: '16px 28px', borderLeft: i > 0 ? `1px solid ${T.border}` : 'none' }}>
-                <div style={{ fontFamily: T.display, fontWeight: 900, fontSize: 'clamp(1.8rem,3.5vw,3rem)', color: T.black, letterSpacing: '-2px', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                  {String(cd[k]).padStart(2, '0')}
-                </div>
-                <div style={{ fontFamily: T.body, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: T.gray2, marginTop: 6 }}>{label}</div>
+          <div style={{ display:'flex', gap:0, border:`1px solid ${T.border}`, background:T.bg, alignSelf: mobile ? 'stretch' : 'auto' }}>
+            {[['d','Days'],['h','Hrs'],['m','Min'],['s','Sec']].map(([k,label],i) => (
+              <div key={k} style={{ textAlign:'center', padding: mobile ? '12px 0' : '16px 28px', flex: mobile ? 1 : 'none', borderLeft: i>0 ? `1px solid ${T.border}` : 'none' }}>
+                <div style={{ fontFamily:T.display, fontWeight:900, fontSize: mobile ? 'clamp(1.4rem,6vw,2rem)' : 'clamp(1.8rem,3.5vw,3rem)', color:T.black, letterSpacing:'-2px', lineHeight:1, fontVariantNumeric:'tabular-nums' }}>{String(cd[k]).padStart(2,'0')}</div>
+                <div style={{ fontFamily:T.body, fontSize:10, letterSpacing:'0.2em', textTransform:'uppercase', color:T.gray2, marginTop:6 }}>{label}</div>
               </div>
             ))}
           </div>
@@ -239,15 +206,16 @@ function Hero() {
 
 // ── Stats — black band ─────────────────────────────────────────
 function Stats() {
+  const mobile = useIsMobile()
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
+  const inView = useInView(ref, { once: true, amount: 0.05 })
   return (
-    <section ref={ref} style={{ background: T.black, padding: '56px 80px' }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
+    <section ref={ref} style={{ background:T.black, padding: mobile ? '40px 20px' : '56px 80px' }}>
+      <div style={{ maxWidth:1100, margin:'0 auto', display:'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(4,1fr)', gap: mobile ? 24 : 0 }}>
         {[{val:12000,suf:'+',label:'Runners'},{val:17,suf:'+',label:'Cities'},{val:8,suf:'',label:'Years Running'},{val:4,suf:'',label:'Distances'}].map((s,i) => (
           <motion.div key={s.label}
-            initial={{ opacity:0, y:12 }} animate={inView?{opacity:1,y:0}:{}} transition={{ delay:i*0.08 }}
-            style={{ textAlign:'center', padding:'0 24px', borderRight: i<3 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}
+            initial={{opacity:0,y:12}} animate={inView?{opacity:1,y:0}:{}} transition={{delay:i*0.08}}
+            style={{ textAlign:'center', padding: mobile ? '0' : '0 24px', borderRight: !mobile && i<3 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}
           >
             <div style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2.2rem,4vw,3.5rem)', color:'#fff', letterSpacing:'-2px', lineHeight:1 }}>
               {inView ? <CountUp to={s.val} suffix={s.suf} /> : '0'}
@@ -262,6 +230,7 @@ function Stats() {
 
 // ── Races — list rows ──────────────────────────────────────────
 function Races() {
+  const mobile = useIsMobile()
   const races = [
     { name:'5K Run',        km:'05', tag:'Beginner',     desc:'Open to all ages. No timing chip. Perfect first race.', color:'#0ea5e9', fee:'₹799'   },
     { name:'10K Run',       km:'10', tag:'Popular',      desc:'The crowd favourite. Timed run through Chennai.',        color:T.orange,  fee:'₹999'   },
@@ -269,39 +238,35 @@ function Races() {
     { name:'31.6K Ultra',   km:'31', tag:'Elite',        desc:"Chennai's ultimate midnight challenge.",                 color:'#f59e0b', fee:'₹1,999' },
   ]
   return (
-    <section id="races" style={{ background: T.bg, padding: '96px 80px', borderTop: `1px solid ${T.border}` }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}}
-          style={{ marginBottom:56, display:'flex', alignItems:'flex-end', justifyContent:'space-between' }}
-        >
+    <section id="races" style={{ background:T.bg, padding: mobile ? '64px 20px' : '96px 80px', borderTop:`1px solid ${T.border}` }}>
+      <div style={{ maxWidth:1100, margin:'0 auto' }}>
+        <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:0.05}}
+          style={{ marginBottom:40, display:'flex', alignItems:'flex-end', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
           <div>
             <p style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.orange, marginBottom:10 }}>Race Categories</p>
             <h2 style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2.5rem,6vw,4.5rem)', color:T.black, letterSpacing:'-3px', lineHeight:0.9 }}>Pick Your<br/>Distance</h2>
           </div>
-          <a href="#register" style={{ fontFamily:T.body, fontWeight:600, fontSize:11, letterSpacing:'0.1em', padding:'10px 20px', border:`1px solid ${T.border}`, color:T.gray, textDecoration:'none', borderRadius:2 }}>
-            VIEW ALL →
-          </a>
+          <a href="#register" style={{ fontFamily:T.body, fontWeight:600, fontSize:11, letterSpacing:'0.1em', padding:'10px 20px', border:`1px solid ${T.border}`, color:T.gray, textDecoration:'none', borderRadius:2 }}>VIEW ALL →</a>
         </motion.div>
-
         <div>
           {races.map((r,i) => (
             <motion.div key={r.name}
-              initial={{opacity:0,x:-20}} whileInView={{opacity:1,x:0}} viewport={{once:true}} transition={{delay:i*0.07}}
+              initial={{opacity:0,x:-20}} whileInView={{opacity:1,x:0}} viewport={{once:true,amount:0.05}} transition={{delay:i*0.07}}
               whileHover={{ backgroundColor: T.bg1 }}
-              style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'24px 16px', borderTop:`1px solid ${T.border}`, cursor:'pointer', transition:'background 0.2s', borderRadius:2 }}
+              style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding: mobile ? '18px 8px' : '24px 16px', borderTop:`1px solid ${T.border}`, cursor:'pointer', transition:'background 0.2s', borderRadius:2 }}
             >
-              <div style={{ display:'flex', alignItems:'center', gap:28 }}>
-                <span style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2.5rem,5vw,4rem)', color:'rgba(0,0,0,0.06)', letterSpacing:'-3px', lineHeight:1, minWidth:100, textAlign:'right' }}>{r.km}</span>
+              <div style={{ display:'flex', alignItems:'center', gap: mobile ? 12 : 28 }}>
+                {!mobile && <span style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2.5rem,5vw,4rem)', color:'rgba(0,0,0,0.06)', letterSpacing:'-3px', lineHeight:1, minWidth:100, textAlign:'right' }}>{r.km}</span>}
                 <div>
-                  <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:5 }}>
-                    <span style={{ fontFamily:T.display, fontWeight:800, fontSize:'clamp(1.1rem,2vw,1.6rem)', color:T.black, letterSpacing:'-0.5px' }}>{r.name}</span>
+                  <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:4, flexWrap:'wrap' }}>
+                    <span style={{ fontFamily:T.display, fontWeight:800, fontSize:'clamp(1rem,2vw,1.6rem)', color:T.black, letterSpacing:'-0.5px' }}>{r.name}</span>
                     <span style={{ fontFamily:T.body, fontSize:10, fontWeight:700, padding:'3px 8px', borderRadius:2, background:`${r.color}18`, color:r.color, letterSpacing:'0.05em' }}>{r.tag}</span>
                   </div>
-                  <p style={{ fontFamily:T.body, fontSize:13, color:T.gray, lineHeight:1.5 }}>{r.desc}</p>
+                  {!mobile && <p style={{ fontFamily:T.body, fontSize:13, color:T.gray, lineHeight:1.5 }}>{r.desc}</p>}
                 </div>
               </div>
-              <div style={{ display:'flex', alignItems:'center', gap:20, flexShrink:0 }}>
-                <span style={{ fontFamily:T.display, fontWeight:800, fontSize:18, color:T.black, letterSpacing:'-0.5px' }}>{r.fee}</span>
+              <div style={{ display:'flex', alignItems:'center', gap: mobile ? 10 : 20, flexShrink:0 }}>
+                <span style={{ fontFamily:T.display, fontWeight:800, fontSize: mobile ? 15 : 18, color:T.black, letterSpacing:'-0.5px' }}>{r.fee}</span>
                 <div style={{ width:34, height:34, borderRadius:'50%', border:`1px solid ${T.border}`, display:'flex', alignItems:'center', justifyContent:'center' }}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </div>
@@ -317,10 +282,11 @@ function Races() {
 
 // ── Route ──────────────────────────────────────────────────────
 function RouteSection() {
+  const mobile = useIsMobile()
   return (
-    <section id="route" style={{ background: T.bg1, borderTop:`1px solid ${T.border}`, padding:'96px 80px' }}>
-      <div style={{ maxWidth:1100, margin:'0 auto', display:'grid', gridTemplateColumns:'1fr 1fr', gap:80, alignItems:'center' }}>
-        <motion.div initial={{opacity:0,x:-24}} whileInView={{opacity:1,x:0}} viewport={{once:true}}>
+    <section id="route" style={{ background:T.bg1, borderTop:`1px solid ${T.border}`, padding: mobile ? '64px 20px' : '96px 80px' }}>
+      <div style={{ maxWidth:1100, margin:'0 auto', display:'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: mobile ? 40 : 80, alignItems:'center' }}>
+        <motion.div initial={{opacity:0,x:-24}} whileInView={{opacity:1,x:0}} viewport={{once:true,amount:0.05}}>
           <p style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.orange, marginBottom:12 }}>The Course</p>
           <h2 style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2rem,4vw,3.5rem)', color:T.black, letterSpacing:'-2px', lineHeight:0.92, marginBottom:24 }}>Run Through<br/>Chennai's Heart</h2>
           <p style={{ fontFamily:T.body, fontSize:14, color:T.gray, lineHeight:1.75, marginBottom:36 }}>
@@ -329,7 +295,7 @@ function RouteSection() {
           <div>
             {[['Start / Finish','Marina Beach Promenade'],['Landmark 1','Napier Bridge'],['Landmark 2','Anna Salai'],['Turnaround','Lighthouse, Marina']].map(([pt,loc],i) => (
               <motion.div key={pt}
-                initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{delay:i*0.08}}
+                initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true,amount:0.05}} transition={{delay:i*0.08}}
                 style={{ display:'flex', alignItems:'center', gap:16, padding:'14px 0', borderBottom:`1px solid ${T.border}` }}
               >
                 <div style={{ width:6, height:6, borderRadius:'50%', background:T.orange, flexShrink:0 }} />
@@ -339,19 +305,18 @@ function RouteSection() {
             ))}
           </div>
         </motion.div>
-
-        <motion.div initial={{opacity:0,x:24}} whileInView={{opacity:1,x:0}} viewport={{once:true}}
+        <motion.div initial={{opacity:0,x: mobile ? 0 : 24, y: mobile ? 24 : 0}} whileInView={{opacity:1,x:0,y:0}} viewport={{once:true,amount:0.05}}
           style={{ background:T.bg, border:`1px solid ${T.border}`, borderRadius:4, aspectRatio:'1', display:'flex', alignItems:'center', justifyContent:'center', position:'relative', overflow:'hidden' }}
         >
           <div style={{ position:'absolute', inset:0, background:`radial-gradient(circle at 50% 50%, ${T.orangeL}, transparent 70%)` }} />
           <svg viewBox="0 0 280 280" style={{ width:'80%', height:'80%' }} fill="none">
             <motion.path d="M 140 240 C 70 240 36 185 36 140 C 36 75 95 36 140 36 C 185 36 244 75 244 140 C 244 185 210 228 172 240 L 140 240"
               stroke={T.orange} strokeWidth="2" strokeDasharray="580"
-              initial={{strokeDashoffset:580}} whileInView={{strokeDashoffset:0}} viewport={{once:true}} transition={{duration:2.5,ease:'easeInOut'}}
+              initial={{strokeDashoffset:580}} whileInView={{strokeDashoffset:0}} viewport={{once:true,amount:0.05}} transition={{duration:2.5,ease:'easeInOut'}}
             />
             {[[140,240],[36,140],[140,36],[244,140]].map(([cx,cy],i) => (
               <motion.circle key={i} cx={cx} cy={cy} r="5" fill={T.orange}
-                initial={{scale:0,opacity:0}} whileInView={{scale:1,opacity:1}} viewport={{once:true}} transition={{delay:0.6+i*0.25}} />
+                initial={{scale:0,opacity:0}} whileInView={{scale:1,opacity:1}} viewport={{once:true,amount:0.05}} transition={{delay:0.6+i*0.25}} />
             ))}
             <text x="148" y="260" fill={T.gray} fontSize="9" fontFamily="DM Sans,sans-serif">Marina Beach</text>
           </svg>
@@ -361,31 +326,31 @@ function RouteSection() {
     </section>
   )
 }
-
 // ── Prizes ─────────────────────────────────────────────────────
 function Prizes() {
+  const mobile = useIsMobile()
   const prizes = [
-    { place:'01', amount:'₹1,00,000', race:'31.6K Open',        color:T.orange },
-    { place:'02', amount:'₹50,000',   race:'31.6K Open',        color:T.gray   },
-    { place:'03', amount:'₹25,000',   race:'31.6K Open',        color:'#cd7f32'},
+    { place:'01', amount:'₹1,00,000', race:'31.6K Open',         color:T.orange },
+    { place:'02', amount:'₹50,000',   race:'31.6K Open',         color:T.gray   },
+    { place:'03', amount:'₹25,000',   race:'31.6K Open',         color:'#cd7f32'},
     { place:'—',  amount:'₹20,000',   race:'Half Marathon Top 3',color:'#8b5cf6'},
   ]
   return (
-    <section id="prizes" style={{ background:T.bg, borderTop:`1px solid ${T.border}`, padding:'96px 80px' }}>
+    <section id="prizes" style={{ background:T.bg, borderTop:`1px solid ${T.border}`, padding: mobile ? '64px 20px' : '96px 80px' }}>
       <div style={{ maxWidth:1100, margin:'0 auto' }}>
-        <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}} style={{marginBottom:56}}>
+        <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:0.05}} style={{marginBottom: mobile ? 32 : 56}}>
           <p style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.orange, marginBottom:10 }}>Prize Pool</p>
           <h2 style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(2.5rem,6vw,4.5rem)', color:T.black, letterSpacing:'-3px', lineHeight:0.9 }}>Run For Glory</h2>
         </motion.div>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:12 }}>
+        <div style={{ display:'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(4,1fr)', gap:12 }}>
           {prizes.map((p,i) => (
             <motion.div key={i}
-              initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.07}}
-              style={{ padding:'32px 24px', background:T.bg1, border:`1px solid ${T.border}`, borderRadius:4, position:'relative', overflow:'hidden' }}
+              initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:0.05}} transition={{delay:i*0.07}}
+              style={{ padding:'28px 20px', background:T.bg1, border:`1px solid ${T.border}`, borderRadius:4, position:'relative', overflow:'hidden' }}
             >
               <div style={{ position:'absolute', top:0, left:0, right:0, height:3, background:p.color }} />
-              <div style={{ fontFamily:T.display, fontWeight:900, fontSize:52, color:'rgba(0,0,0,0.05)', letterSpacing:'-3px', lineHeight:1, marginBottom:16 }}>{p.place}</div>
-              <div style={{ fontFamily:T.display, fontWeight:900, fontSize:22, color:T.black, letterSpacing:'-1px', marginBottom:6 }}>{p.amount}</div>
+              <div style={{ fontFamily:T.display, fontWeight:900, fontSize:48, color:'rgba(0,0,0,0.05)', letterSpacing:'-3px', lineHeight:1, marginBottom:12 }}>{p.place}</div>
+              <div style={{ fontFamily:T.display, fontWeight:900, fontSize: mobile ? 18 : 22, color:T.black, letterSpacing:'-1px', marginBottom:6 }}>{p.amount}</div>
               <div style={{ fontFamily:T.body, fontSize:11, color:T.gray, letterSpacing:'0.03em' }}>{p.race}</div>
             </motion.div>
           ))}
@@ -397,6 +362,7 @@ function Prizes() {
 
 // ── Partners ───────────────────────────────────────────────────
 function Partners() {
+  const mobile = useIsMobile()
   const logos = [
     '/images/v5/OTWR-LOGO-Final-e1762329867862.png',
     '/images/v5/Bajate-Raho-logo-e1760617804310.png',
@@ -409,17 +375,17 @@ function Partners() {
   ]
   return (
     <section id="partners" style={{ background:T.bg2, borderTop:`1px solid ${T.border}`, padding:'64px 0', overflow:'hidden' }}>
-      <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 80px', marginBottom:32, display:'flex', alignItems:'center', gap:20 }}>
+      <div style={{ maxWidth:1100, margin:'0 auto', padding: mobile ? '0 20px' : '0 80px', marginBottom:32, display:'flex', alignItems:'center', gap:20 }}>
         <p style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.gray2, whiteSpace:'nowrap' }}>Our Partners</p>
         <div style={{ height:1, flex:1, background:T.border }} />
       </div>
       <motion.div
         animate={{ x:['0%','-50%'] }}
         transition={{ duration:28, repeat:Infinity, ease:'linear' }}
-        style={{ display:'flex', alignItems:'center', gap:64, width:'max-content' }}
+        style={{ display:'flex', alignItems:'center', gap: mobile ? 40 : 64, width:'max-content' }}
       >
         {[...logos,...logos].map((src,i) => (
-          <div key={i} style={{ width:100, height:36, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+          <div key={i} style={{ width: mobile ? 72 : 100, height:36, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
             <img src={src} alt="" style={{ maxHeight:28, maxWidth:'100%', objectFit:'contain', opacity:0.35 }} />
           </div>
         ))}
@@ -430,6 +396,7 @@ function Partners() {
 
 // ── Register — form section ─────────────────────────────────────
 function Register() {
+  const mobile = useIsMobile()
   const [state, handleSubmit] = useForm('mzdywklo')
   const [selected, setSelected] = useState('')
   const races = [
@@ -438,16 +405,13 @@ function Register() {
     { id:'half', label:'Half Marathon', fee:'₹1,499' },
     { id:'ultra',label:'31.6K Ultra',   fee:'₹1,999' },
   ]
-
   return (
-    <section id="register" style={{ background:T.black, padding:'100px 80px', position:'relative', overflow:'hidden' }}>
+    <section id="register" style={{ background:T.black, padding: mobile ? '64px 20px' : '100px 80px', position:'relative', overflow:'hidden' }}>
       <div style={{ position:'absolute', right:-20, bottom:-40, pointerEvents:'none' }}>
         <span style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(120px,20vw,260px)', color:'rgba(255,255,255,0.03)', lineHeight:1, letterSpacing:'-8px', userSelect:'none' }}>RUN</span>
       </div>
-      <div style={{ maxWidth:1100, margin:'0 auto', position:'relative', zIndex:1, display:'grid', gridTemplateColumns:'1fr 1fr', gap:80, alignItems:'start' }}>
-
-        {/* Left — heading */}
-        <motion.div initial={{opacity:0,x:-24}} whileInView={{opacity:1,x:0}} viewport={{once:true}}>
+      <div style={{ maxWidth:1100, margin:'0 auto', position:'relative', zIndex:1, display:'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: mobile ? 40 : 80, alignItems:'start' }}>
+        <motion.div initial={{opacity:0,x: mobile ? 0 : -24, y: mobile ? -16 : 0}} whileInView={{opacity:1,x:0,y:0}} viewport={{once:true,amount:0.05}}>
           <p style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.3em', textTransform:'uppercase', color:T.orange, marginBottom:20 }}>December 5, 2026</p>
           <h2 style={{ fontFamily:T.display, fontWeight:900, fontSize:'clamp(3rem,8vw,6.5rem)', color:'#fff', letterSpacing:'-4px', lineHeight:0.88, marginBottom:32 }}>
             Are You<br/>Ready?
@@ -465,9 +429,7 @@ function Register() {
             ))}
           </div>
         </motion.div>
-
-        {/* Right — form */}
-        <motion.div initial={{opacity:0,x:24}} whileInView={{opacity:1,x:0}} viewport={{once:true}}>
+        <motion.div initial={{opacity:0,x: mobile ? 0 : 24, y: mobile ? 16 : 0}} whileInView={{opacity:1,x:0,y:0}} viewport={{once:true,amount:0.05}}>
           {state.succeeded ? (
             <div style={{ padding:'48px 40px', border:`1px solid rgba(245,98,33,0.3)`, borderRadius:4, textAlign:'center' }}>
               <div style={{ width:48, height:48, borderRadius:'50%', background:'rgba(245,98,33,0.15)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px' }}>
@@ -478,45 +440,33 @@ function Register() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display:'flex', flexDirection:'column', gap:16 }}>
-              {/* hidden distance field */}
               <input type="hidden" name="distance" value={selected || 'Not selected'} />
-
               {[
-                { name:'name',  label:'Full Name',     type:'text',  placeholder:'Your name' },
-                { name:'email', label:'Email Address',  type:'email', placeholder:'you@example.com' },
-                { name:'phone', label:'Phone Number',   type:'tel',   placeholder:'+91 98765 43210' },
+                { name:'name',  label:'Full Name',    type:'text',  placeholder:'Your name' },
+                { name:'email', label:'Email Address', type:'email', placeholder:'you@example.com' },
+                { name:'phone', label:'Phone Number',  type:'tel',   placeholder:'+91 98765 43210' },
               ].map(f => (
                 <div key={f.name}>
                   <label style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'rgba(255,255,255,0.4)', display:'block', marginBottom:8 }}>{f.label}</label>
-                  <input
-                    type={f.type} name={f.name} placeholder={f.placeholder} required
+                  <input type={f.type} name={f.name} placeholder={f.placeholder} required
                     style={{ width:'100%', padding:'12px 16px', background:'rgba(255,255,255,0.05)', border:`1px solid rgba(255,255,255,0.1)`, borderRadius:2, fontFamily:T.body, fontSize:14, color:'#fff', outline:'none', boxSizing:'border-box', transition:'border-color 0.15s' }}
                     onFocus={e => e.target.style.borderColor = T.orange}
-                    onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
-                  />
+                    onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,0.1)'} />
                   <ValidationError field={f.name} errors={state.errors} style={{ fontFamily:T.body, fontSize:11, color:T.orange, marginTop:4, display:'block' }} />
                 </div>
               ))}
-
               <div>
                 <label style={{ fontFamily:T.body, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'rgba(255,255,255,0.4)', display:'block', marginBottom:8 }}>City</label>
-                <input
-                  type="text" name="city" placeholder="Chennai" required
+                <input type="text" name="city" placeholder="Chennai" required
                   style={{ width:'100%', padding:'12px 16px', background:'rgba(255,255,255,0.05)', border:`1px solid rgba(255,255,255,0.1)`, borderRadius:2, fontFamily:T.body, fontSize:14, color:'#fff', outline:'none', boxSizing:'border-box', transition:'border-color 0.15s' }}
                   onFocus={e => e.target.style.borderColor = T.orange}
-                  onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
-                />
+                  onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,0.1)'} />
               </div>
-
-              {!selected && (
-                <p style={{ fontFamily:T.body, fontSize:12, color:'rgba(255,255,255,0.3)', fontStyle:'italic' }}>← Pick a race distance on the left</p>
-              )}
-
+              {!selected && <p style={{ fontFamily:T.body, fontSize:12, color:'rgba(255,255,255,0.3)', fontStyle:'italic' }}>← Pick a race distance above</p>}
               <button type="submit" disabled={state.submitting}
                 style={{ marginTop:8, padding:'14px 32px', background: state.submitting ? 'rgba(245,98,33,0.5)' : T.orange, color:'#fff', border:'none', borderRadius:2, fontFamily:T.body, fontWeight:700, fontSize:12, letterSpacing:'0.12em', cursor: state.submitting ? 'not-allowed' : 'pointer', transition:'opacity 0.15s', boxShadow:'0 0 40px rgba(245,98,33,0.25)' }}>
                 {state.submitting ? 'SENDING...' : 'SECURE MY BIB →'}
               </button>
-
               <ValidationError errors={state.errors} style={{ fontFamily:T.body, fontSize:12, color:T.orange }} />
             </form>
           )}
@@ -528,13 +478,14 @@ function Register() {
 
 // ── Footer ─────────────────────────────────────────────────────
 function Footer() {
+  const mobile = useIsMobile()
   return (
-    <footer style={{ background:T.bg, borderTop:`1px solid ${T.border}`, padding:'24px 80px' }}>
+    <footer style={{ background:T.bg, borderTop:`1px solid ${T.border}`, padding: mobile ? '24px 20px' : '24px 80px' }}>
       <div style={{ maxWidth:1100, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:16 }}>
         <span style={{ fontFamily:T.display, fontWeight:900, fontSize:13, color:T.black, letterSpacing:'-0.3px' }}>
           CMM <span style={{ color:T.orange }}>·</span> 2026
         </span>
-        <div style={{ display:'flex', gap:24 }}>
+        <div style={{ display:'flex', gap: mobile ? 16 : 24, flexWrap:'wrap' }}>
           {['Privacy','Terms','Refund','Contact'].map(item => (
             <a key={item} href="#" style={{ fontFamily:T.body, fontSize:12, color:T.gray2, textDecoration:'none', transition:'color 0.15s' }}
               onMouseEnter={e=>e.target.style.color=T.black} onMouseLeave={e=>e.target.style.color=T.gray2}>{item}</a>

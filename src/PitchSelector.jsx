@@ -37,7 +37,7 @@ const TIERS = [
     desc: 'Modern take on the reference site design language — light theme, Grechen Fuemen + Poppins + Archivo, orange accent.',
     tags: ['Light theme', 'Grechen Fuemen + Poppins', 'Orange accent', '17 pages', 'React Router'],
     accent: '#f56221',
-    bg: 'linear-gradient(135deg, #fff5f0, #ffe8db)',
+    bg: 'linear-gradient(135deg, #1a0e08, #2a1508)',
   },
   {
     id: 'v5',
@@ -46,16 +46,16 @@ const TIERS = [
     desc: 'Pixel-perfect clone of the Bharat Midnight Marathon Bangalore website. Same structure, fonts, colors, layout — adapted for Chennai.',
     tags: ['Elementor structure', 'Exact CSS values', 'Browser-harness extracted', 'WordPress feel', '17 pages'],
     accent: '#f56221',
-    bg: 'linear-gradient(135deg, #fefefe, #f0f0f0)',
+    bg: 'linear-gradient(135deg, #0f0f0f, #1a1a1a)',
   },
   {
     id: 'v7',
     name: 'Night City Run',
     price: '₹2,50,000',
-    desc: 'Cinematic dark identity built for Chennai. Grain texture, bento race grid, animated SVG route map, live countdown, neon accents. Owns the midnight angle.',
-    tags: ['Dark + Grain', 'Bento Grid', 'SVG Route Map', 'Live Countdown', 'Framer Motion', 'Single Page'],
-    accent: '#22d3ee',
-    bg: 'linear-gradient(135deg, #080808, #0f1a1a)',
+    desc: 'White-dominant editorial design — bold black compressed type, orange brand accent, asymmetric layout. Live countdown, working registration form.',
+    tags: ['White + Editorial', 'Custom Cursor', 'Live Countdown', 'Register Form', 'Framer Motion', 'Single Page'],
+    accent: '#f56221',
+    bg: 'linear-gradient(135deg, #080808, #1a0a00)',
   },
 ]
 
